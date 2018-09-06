@@ -1,5 +1,6 @@
 // Import stylesheets
 import '@/assets/styles/index.scss';
+import 'normalize.css';
 
 import Vue from 'vue';
 import App from './App.vue';
