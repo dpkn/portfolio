@@ -1,9 +1,34 @@
 <template>
   <section class="portfolio-grid">
+    <div class="portfolio-item" style="height:550px;">
+      <img :src="`${baseUrl}videos/lesya.png`" alt="Portfolio item" />
+      <div class="overlay">
+        <div class="text">Lesya</div>
+      </div>
+    </div>
     <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
+      <video autoplay loop muted playsinline class="video-js" data-setup='{"preload": "auto","fluid":true}'>
+        <source
+          :src="`${baseUrl}videos/big_buck_bunny.webm`"
+          type="video/webm">
+          <source
+            :src="`${baseUrl}videos/big_buck_bunny.mp4`"
+            type="video/mp4">
+      </video>
       <div class="overlay">
         <div class="text">Hello World</div>
+      </div>
+    </div>
+    <div class="portfolio-item" style="height:350px;">
+      <img :src="`${baseUrl}videos/howmanyweeks.png`" alt="Portfolio item" />
+      <div class="overlay">
+        <div class="text">How many weeks left?</div>
+      </div>
+    </div>
+    <div class="portfolio-item" style="height:500px;">
+      <img :src="`${baseUrl}videos/bloclock.png`" alt="Portfolio item" />
+      <div class="overlay">
+        <div class="text">Bloclock</div>
       </div>
     </div>
     <div class="portfolio-item">
@@ -40,8 +65,16 @@
 </template>
 
 <script>
+import 'video.js/dist/video-js.css';
+import 'video.js';
+
 export default {
   name: 'PortfolioGrid',
+  data() {
+    return {
+      baseUrl: process.env.BASE_URL,
+    };
+  },
 };
 </script>
 
@@ -68,12 +101,13 @@ export default {
 }
 .portfolio-item{
   width: 47%;
-  width: -webkit-calc(50% - 40px);
-  height: 500px;
+  width: -webkit-calc(50% - 30px);
+  height: 350px;
   float:left;
   display: inline-block;
     position: relative;
-  margin: 20px;
+    border-radius: 3px;
+  margin: 15px;
   background: #323232;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
   overflow: hidden;
@@ -81,8 +115,16 @@ export default {
 .portfolio img {
   display: block;
   width: 100%;
-  height: auto;
 }
+.portfolio video {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.vjs-tech { object-fit: cover; }
 .overlay {
   position: absolute;
   top: 0;
