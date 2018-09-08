@@ -1,36 +1,14 @@
 <template>
   <div id="app">
-    <MainNavigation></MainNavigation>
-    <MainHero></MainHero>
-    <section class="portfolio">
-      <section class="buttons">
-        <a class="button">school</a>
-        <a class="button selected">graphic design</a>
-        <a class="button">experiments</a>
-        <a class="button">case studies</a>
-        <a class="button">web</a>
-        <a class="button">other</a>
-      </section>
-      <PortfolioGrid></PortfolioGrid>
-    </section>
-    <MainFooter></MainFooter>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import MainNavigation from '@/components/MainNavigation.vue';
-import MainHero from '@/components/MainHero.vue';
-import PortfolioGrid from '@/components/PortfolioGrid.vue';
-import MainFooter from '@/components/MainFooter.vue';
-
 export default {
   name: 'app',
-  components: {
-    MainNavigation,
-    MainHero,
-    PortfolioGrid,
-    MainFooter,
-  },
 };
 </script>
 
@@ -70,5 +48,12 @@ export default {
     background: #434343;
     color:#fff;
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
