@@ -1,24 +1,46 @@
 <template>
   <section class="portfolio-grid">
+    <div v-for="(item,key) in portfolioItems" class="portfolio-item" style="">
+        <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
+          <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url" :alt="item.title" />
+          <video  v-if="item.thumbnail.type=='video'"
+                  autoplay loop muted playsinline class="video-js"
+                  data-setup='{"preload": "auto","fluid":true}'>
+            <source
+              :src="`${baseUrl}videos/big_buck_bunny.webm`"
+              type="video/webm">
+              <source
+                :src="`${baseUrl}videos/big_buck_bunny.mp4`"
+                type="video/mp4">
+          </video>
+          <div class="overlay">
+            <div class="text"><h1>{{ item.title }}</h1><p>{{ item.subtitle }}</p></div>
+          </div>
+        </router-link>
+    </div>
+<!--
     <div class="portfolio-item" style="height:550px;">
       <img :src="`${baseUrl}videos/lesya.png`" alt="Portfolio item" />
       <div class="overlay">
         <div class="text">Lesya</div>
       </div>
     </div>
-    <div class="portfolio-item">
-      <video autoplay loop muted playsinline class="video-js" data-setup='{"preload": "auto","fluid":true}'>
-        <source
-          :src="`${baseUrl}videos/big_buck_bunny.webm`"
-          type="video/webm">
+    <router-link :to="{ name: 'PortfolioItem', params: {'id':3,'name':'hello-world'} }">
+      <div class="portfolio-item">
+        <video autoplay loop muted playsinline class="video-js"
+        data-setup='{"preload": "auto","fluid":true}'>
           <source
-            :src="`${baseUrl}videos/big_buck_bunny.mp4`"
-            type="video/mp4">
-      </video>
-      <div class="overlay">
-        <div class="text">Hello World</div>
+            :src="`${baseUrl}videos/big_buck_bunny.webm`"
+            type="video/webm">
+            <source
+              :src="`${baseUrl}videos/big_buck_bunny.mp4`"
+              type="video/mp4">
+        </video>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
       </div>
-    </div>
+    </router-link>
     <div class="portfolio-item" style="height:350px;">
       <img :src="`${baseUrl}videos/howmanyweeks.png`" alt="Portfolio item" />
       <div class="overlay">
@@ -31,48 +53,27 @@
         <div class="text">Bloclock</div>
       </div>
     </div>
-    <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="https://picsum.photos/200/300" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
-    </div>
+  -->
   </section>
 </template>
 
 <script>
+// Import assest for video.js library
 import 'video.js/dist/video-js.css';
 import 'video.js';
 
+import portfolioItems from '../assets/portfolio/portfolio.json';
+
 export default {
   name: 'PortfolioGrid',
+  created() {
+    // Import all portfolio items from the .json file into this components data
+    this.portfolioItems = portfolioItems;
+  },
   data() {
     return {
       baseUrl: process.env.BASE_URL,
+      portfolioItems,
     };
   },
 };
@@ -102,11 +103,10 @@ export default {
 .portfolio-item{
   width: 47%;
   width: -webkit-calc(50% - 30px);
-  height: 350px;
   float:left;
   display: inline-block;
-    position: relative;
-    border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
   margin: 15px;
   background: #323232;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
@@ -134,18 +134,25 @@ export default {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+  transition: .3s ease;
+  background-color: rgba(0,0,0,0.5);
   .text{
     background: #fff;
     padding: 20px 0;
-    font-size: 2em;
-    font-weight: 700;
     bottom: -100px;
     position: absolute;
     width: 100%;
     text-align: center;
-    transition: bottom 0.4s;
+    transition: bottom 0.3s;
+    color:#000;
+    h1{
+      font-size: 2em;
+      font-weight: 700;
+    }
+  }
+  a,a:visited{
+    color:#000;
   }
 }
 .portfolio-item:hover .overlay {
