@@ -1,8 +1,8 @@
 <template>
   <section class="hero">
-    <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, an <span>interaction designer</span>
-      focused on finding new ways to use technology as a method of expression.
-      Lorem ipsum dolor sit amet I need more text here. Find me on <a href="#">GitHub</a>,
+    <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, a <span>creative developer</span>
+      currently studying Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
+      I play and experiment at the intersection of art and technology. You cind me on <a href="#">GitHub</a>,
       <a href="#">LinkedIn</a>, <a href="#">Instagram</a>, or <a href="#">write me a message</a>.
     </h1>
     <img class="headshot pull-right" src="../assets/images/headshot_square.png" alt="Headshot" />
