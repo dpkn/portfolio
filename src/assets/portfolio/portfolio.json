@@ -1,0 +1,68 @@
+{
+	"1": {
+		"hidden": false,
+		"title": "Happy",
+		"subtitle": "Branding a coffee shop",
+		"description": "<p>For a coffee and tea shop called Happy, I got the oportunity to design a brand identity from scratch. This project included multiple logos, as well as posters and digital signage animations.</p><p><b><a target=\"_blank\" href=\"static/downloads/happy_BI.pdf\">Download</a> the brand identity document (.pdf), or look at some of the artwork and animations below.</p>",
+		"content": "<div class=\"row\"><img class=\"sixty\" src=\"static/projects/happy4.jpg\"><img class=\"fourty\" src=\"static/projects/happy3.jpg\"></div><div class=\"row\"><img class=\"half\" src=\"static/projects/happy1.jpg\"><img class=\"half\" src=\"static/projects/happy2.jpg\"></div><div class=\"media-container\" style=\"background:#f2f2f2;\"><div class=\"videoWrapper\"><iframe src=\"https://player.vimeo.com/video/243414541?loop=1&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>",
+		"coverImage": "static/thumbs/happy-header.png",
+		"thumbnailImage": "static/thumbs/happy.png",
+		"link":"1"
+	},
+	"3": {
+		"hidden": false,
+		"title": "How many weeks left?",
+		"subtitle": "Fuel your midlife crisis with statistics",
+		"description": "<p>Ever needed a tool to stress you out and make you re-evaluate your life choices? Howmanyweeksleft.com calculates your life expectancy based on your birthdate and demographic, showing you how much time of your life you already wasted and, more importantly, how many weeks are left until you (statistically) die. Use with caution; feelings of self-loath, remorse, and anxiety may occur.</p><p><b><a target=\"_blank\" href=\"http://howmanyweeksleft.com\">Visit howmanyweeksleft.com</a></p>",
+		"content": "",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/howmanyweeksleft.png",
+		"link":"1"
+	},
+	"5": {
+		"hidden": false,
+		"title": "Bloclock",
+		"subtitle":"A new look on time",
+		"description": "<p>Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. When you go to bed, all of your blocks will be gone. This way of time framing makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.</p><p><b>Visit <a target=\"_blank\" href=\"https://bloclock.com\">bloclock.com</a></p>",
+		"content":"<img src=\"static/headers/bloclock.png\"/>",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/bloclock.png",
+		"link":"1"
+	},
+	"10": {
+		"hidden": false,
+		"title": "Thunder",
+		"subtitle":"Never fear lightning strikes again",
+		"description": "<p>Thunder is a mobile web app tool to calculate how far away you are from a lightning strike. Simply tap when you see the lightning flash, and tap again when you hear the thunder rumble. Based on the difference between the speed of light and sound, the tool calculates wheter you should fear for your life or stop worrying.</p><p><b>Open <a target=\"_blank\" href=\"https://daankorssen.nl/thunder\">Thunder</a></p>",
+		"content":"",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/thunder.png",
+		"link":"1"
+	},
+  "15": {
+		"hidden": false,
+		"title": "Countryside Investigator",
+		"description": "<p><i>Gerrits Adventures (Countryside investigator)</i> is a point-and-click adventure game focusing on the story of Gerrit; a hard-working, modest farmer living his simple life in the countryside. When one night he wakes up to a strange sound only to find his dog abducted, Gerrit decides to look for clues. As someone quite unfamiliar to the hustle and bustle of a city, Gerrit has a hard time navigating and interacting with others. As a player, your objective is to help him find his dog back and to make sure Gerrit doesn't get lost in the city.</p>",
+		"content":"<img src=\"static/headers/gerrit.png\" /><img src=\"static/thumbs/gerrit2.png\"/><img src=\"static/thumbs/gerrit1.png\"/>",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/gerrit.png"
+	},
+	"20": {
+		"hidden": false,
+		"title": "Paperplane",
+		"subtitle": "A better way to navigate the airport",
+		"description": "<p>When KLM and Schiphol Airport challenged us to come up with a better way to navigate the airport, we came up with Paperplane. Paperplane uses smart algorithms to determine the best walking route through the airport taking into account the users needs and the amount of time left before boarding. It utilises personalized incentives like store discounts to navigate the users in the desired direction, making their stay more profitable for the airport and more convenient for the user at the same time. My responsibilities in this project included animation, UX and graphic design.</b></p>",
+		"content":"<div class=\"media-container\" style=\"background:#1e4c94;\"><img style=\"max-width:800px;\"  src=\"static/projects/paperplane1.svg\"/></div><div class=\"media-container\" style=\"background:#588ddb;\"> <video style=\"margin:0 auto;width:375;height:667px;\"class=\"video-js vjs-big-play-centered\" controls preload=\"auto\" data-setup=\"{}\"> <source src=\"static/projects/paperplane.mp4\" type='video/mp4'></video></div>",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/paperplane.png"
+	},
+	"25": {
+		"hidden": false,
+		"title": "Bla",
+		"description": "<p>Coding is becoming an increasingly important skill in our society. However, getting children to learn how to code is a difficult task. <i>Bla.</i> teaches all the basics for simple front-end development (HTML, CSS, JS) using a fun new approach. 'Bla' is your personal digital pet you can upgrade by learning how to code. Want a new dress? Code it. Getting tired of the things you can do with your Bla? Write some new functions. View eachothers Bla's and let them interact by using more advanced code. Bla won the second price at the YC Hackathon.</p><p><b>Since <i>Bla.</i> was a proof of concept, the development is discontinued.</b></p>",
+		"content":"<img src=\"static/headers/bla.png\"/>",
+		"coverImage": "",
+		"thumbnailImage": "static/thumbs/bla.png"
+	}
+
+}
