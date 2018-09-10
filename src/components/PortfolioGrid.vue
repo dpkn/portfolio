@@ -27,7 +27,7 @@
 import 'video.js/dist/video-js.css';
 import 'video.js';
 import imagesLoaded from 'imagesloaded';
-import Masonry from 'masonry-layout';
+import Isotope from 'isotope-layout';
 
 // Import Portfolio data
 import portfolioItems from '../assets/portfolio/portfolio.json';
@@ -39,10 +39,13 @@ export default {
     this.portfolioItems = portfolioItems;
   },
   mounted() {
-    // Set up the grid with Masonry
-    const grid = new Masonry('.portfolio-grid', {
+    // Set up the grid with Masonry and Isotope
+    const grid = new Isotope('.portfolio-grid', {
+      // options
       itemSelector: '.portfolio-item',
+      layoutMode: 'masonry',
     });
+
     // On each new image load, recalculate the grid layout
     // Otherwise the newly loaded images will throw off the
     // layout
