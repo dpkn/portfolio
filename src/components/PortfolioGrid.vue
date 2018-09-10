@@ -1,8 +1,9 @@
 <template>
   <section class="portfolio-grid">
-    <div v-for="(item,key) in portfolioItems" class="portfolio-item" style="">
+    <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item" style="">
         <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
-          <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url" :alt="item.title" />
+          <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url"
+          :alt="item.title" />
           <video  v-if="item.thumbnail.type=='video'"
                   autoplay loop muted playsinline class="video-js"
                   data-setup='{"preload": "auto","fluid":true}'>
@@ -18,50 +19,17 @@
           </div>
         </router-link>
     </div>
-<!--
-    <div class="portfolio-item" style="height:550px;">
-      <img :src="`${baseUrl}videos/lesya.png`" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Lesya</div>
-      </div>
-    </div>
-    <router-link :to="{ name: 'PortfolioItem', params: {'id':3,'name':'hello-world'} }">
-      <div class="portfolio-item">
-        <video autoplay loop muted playsinline class="video-js"
-        data-setup='{"preload": "auto","fluid":true}'>
-          <source
-            :src="`${baseUrl}videos/big_buck_bunny.webm`"
-            type="video/webm">
-            <source
-              :src="`${baseUrl}videos/big_buck_bunny.mp4`"
-              type="video/mp4">
-        </video>
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
-      </div>
-    </router-link>
-    <div class="portfolio-item" style="height:350px;">
-      <img :src="`${baseUrl}videos/howmanyweeks.png`" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">How many weeks left?</div>
-      </div>
-    </div>
-    <div class="portfolio-item" style="height:500px;">
-      <img :src="`${baseUrl}videos/bloclock.png`" alt="Portfolio item" />
-      <div class="overlay">
-        <div class="text">Bloclock</div>
-      </div>
-    </div>
-  -->
   </section>
 </template>
 
 <script>
-// Import assest for video.js library
+// Import plugins
 import 'video.js/dist/video-js.css';
 import 'video.js';
+import imagesLoaded from 'imagesloaded';
+import Masonry from 'masonry-layout';
 
+// Import Portfolio data
 import portfolioItems from '../assets/portfolio/portfolio.json';
 
 export default {
@@ -69,6 +37,18 @@ export default {
   created() {
     // Import all portfolio items from the .json file into this components data
     this.portfolioItems = portfolioItems;
+  },
+  mounted() {
+    // Set up the grid with Masonry
+    const grid = new Masonry('.portfolio-grid', {
+      itemSelector: '.portfolio-item',
+    });
+    // On each new image load, recalculate the grid layout
+    // Otherwise the newly loaded images will throw off the
+    // layout
+    imagesLoaded('.portfolio-grid', () => {
+      grid.layout();
+    });
   },
   data() {
     return {
