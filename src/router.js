@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+
+// Import views
 import Home from './views/Home.vue';
 import Test from './views/TestPage.vue';
 import PortfolioItem from './views/PortfolioItem.vue';
@@ -33,10 +35,6 @@ export default new Router({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    /*
-    if (savedPosition) {
-      return savedPosition;
-    } */
     return { x: 0, y: 0 };
   },
 });
