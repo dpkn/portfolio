@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="horizontal-scroll">
-      <div v-for="(contents,key) in item.content" class="item">
+      <div v-for="(contents,key) in item.content" :key="key" class="item">
         <img :src="contents.url" />
       </div>
     </div>
@@ -18,6 +18,10 @@
 </template>
 
 <script>
+// Import plugins
+import imagesLoaded from 'imagesloaded';
+
+// Import Portfolio data
 import portfolioItems from '../assets/portfolio/portfolio.json';
 
 export default {
@@ -42,7 +46,16 @@ export default {
     },
   },
   mounted() {
+    // FIXME: : Figure out why loading callback does not work ksfdskjklddksaldjksakljdaklj
     this.getItemContent(this.$route.params.id);
+
+    const imgLoad = imagesLoaded('.horizontal-scroll');
+    imgLoad.on('progress', (instance, image) => {
+      console.log(instance, image);
+    });
+    imgLoad.on('done', (instance, image) => {
+      console.log(instance, image);
+    });
   },
 };
 </script>
