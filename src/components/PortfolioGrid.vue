@@ -1,24 +1,47 @@
 <template>
-  <section class="portfolio-grid">
-    <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item" style="">
-        <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
-          <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url"
-          :alt="item.title" />
-          <video  v-if="item.thumbnail.type=='video'"
-                  autoplay loop muted playsinline class="video-js"
-                  data-setup='{"preload": "auto","fluid":true}'>
-            <source
-              :src="`${baseUrl}videos/big_buck_bunny.webm`"
-              type="video/webm">
+  <section class="portfolio">
+    <section class="buttons">
+      <router-link tag="button":to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
+        all
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'photography'} }">
+        photography
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'web'} }">
+        website
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'experiment'} }">
+        experiment
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'test'} }">
+        test
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'testmjfdjf'} }">
+        hello hello
+      </router-link>
+    </section>
+    <section class="portfolio-grid">
+      <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item"
+        :class="item.tags">
+          <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
+            <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url"
+            :alt="item.title" />
+            <video  v-if="item.thumbnail.type=='video'"
+                    autoplay loop muted playsinline class="video-js"
+                    data-setup='{"preload": "auto","fluid":true}'>
               <source
-                :src="`${baseUrl}videos/big_buck_bunny.mp4`"
-                type="video/mp4">
-          </video>
-          <div class="overlay">
-            <div class="text"><h1>{{ item.title }}</h1><p>{{ item.subtitle }}</p></div>
-          </div>
-        </router-link>
-    </div>
+                :src="`${baseUrl}videos/big_buck_bunny.webm`"
+                type="video/webm">
+                <source
+                  :src="`${baseUrl}videos/big_buck_bunny.mp4`"
+                  type="video/mp4">
+            </video>
+            <div class="overlay">
+              <div class="text"><h1>{{ item.title }}</h1><p>{{ item.subtitle }}</p></div>
+            </div>
+          </router-link>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -40,8 +63,7 @@ export default {
   },
   mounted() {
     // Set up the grid with Masonry and Isotope
-    const grid = new Isotope('.portfolio-grid', {
-      // options
+    this.grid = new Isotope('.portfolio-grid', {
       itemSelector: '.portfolio-item',
       layoutMode: 'masonry',
     });
@@ -50,7 +72,7 @@ export default {
     // Otherwise the newly loaded images will throw off the
     // layout
     imagesLoaded('.portfolio-grid', () => {
-      grid.layout();
+      this.grid.layout();
     });
   },
   data() {
@@ -58,6 +80,18 @@ export default {
       baseUrl: process.env.BASE_URL,
       portfolioItems,
     };
+  },
+  watch: {
+    /* eslint func-names: ["error", "never"] */
+    '$route.params.filter': function (filterName) {
+      let filter;
+      if (filterName === 'all') {
+        filter = '*';
+      } else {
+        filter = `.${filterName}`;
+      }
+      this.grid.arrange({ filter });
+    },
   },
 };
 </script>
