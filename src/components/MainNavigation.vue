@@ -2,8 +2,8 @@
   <header class="navbar">
     <h1 class="pull-left">Daniël Korssen</h1>
     <nav class="pull-right">
-      <router-link to="/">work</router-link>
-      <router-link to="/about">contact</router-link>
+      <router-link to="/portfolio">work</router-link>
+      <router-link to="/contact">contact</router-link>
     </nav>
   </header>
 </template>
@@ -38,8 +38,13 @@ export default {
   text-decoration: none;
   color:#000;
 }
+.active{
+  border: 2px solid #000;
+  border-radius: 3px;
+}
 a{
+  padding: 5px 10px;
   font-size: 1.5em;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 </style>
