@@ -1,11 +1,15 @@
 <template>
   <section class="hero">
     <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, a <span>creative developer</span>
-      currently studying Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
-      I play and experiment at the intersection of art and technology. You cind me on <a href="#">GitHub</a>,
-      <a href="#">LinkedIn</a>, <a href="#">Instagram</a>, or <a href="#">write me a message</a>.
+      working and experimenting at the intersection of art and technology.
+      I currently study Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
+      You find me on
+      <a href="https://github.com/dpkn" target="_blank">GitHub</a>,
+      <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
+      <a href="http://instagram.com/danielkorssen" target="_blank">Instagram</a>,
+      or <a href="#">write me a message</a>.
     </h1>
-    <img class="headshot pull-right" src="../assets/images/headshot_square.png" alt="Headshot" />
+    <img class="headshot pull-right" src="../assets/images/headshot_square2.png" alt="Headshot" />
   </section>
 </template>
 
