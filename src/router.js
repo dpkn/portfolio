@@ -3,7 +3,7 @@ import Router from 'vue-router';
 
 // Import views
 import Home from './views/Home.vue';
-import Test from './views/TestPage.vue';
+import Contact from './views/Contact.vue';
 import PortfolioItem from './views/PortfolioItem.vue';
 
 Vue.use(Router);
@@ -12,21 +12,22 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      redirect: '/portfolio/all',
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/PortfolioItem.vue'),
+      path: '/portfolio/:filter',
+      name: 'portfolioFilter',
+      component: Home,
     },
     {
-      path: '/test',
-      name: 'test',
-      component: Test,
+      path: '/contact',
+      name: 'contact',
+      component: Contact,
     },
     {
       path: '/:id',
@@ -35,6 +36,7 @@ export default new Router({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    return { x: 0, y: 0 };
+  //  return { x: 0, y: 0 };
   },
+  linkActiveClass: 'active',
 });
