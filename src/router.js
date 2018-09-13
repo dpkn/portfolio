@@ -15,11 +15,6 @@ export default new Router({
       redirect: '/portfolio/all',
     },
     {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: Home,
-    },
-    {
       path: '/portfolio/:filter',
       name: 'portfolioFilter',
       component: Home,
@@ -35,8 +30,8 @@ export default new Router({
       component: PortfolioItem,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-  //  return { x: 0, y: 0 };
-  },
+  // scrollBehavior(to, from, savedPosition) {
+  // //  return { x: 0, y: 0 };
+  // },
   linkActiveClass: 'active',
 });
