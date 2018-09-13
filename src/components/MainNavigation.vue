@@ -15,14 +15,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// TODO: Move mix-in to a global file
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
 .navbar{
   width:100%;
   padding: 50px 0;

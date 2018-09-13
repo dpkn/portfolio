@@ -20,15 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// TODO: Move mix-in to a global file
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 .hero{
   padding:100px 0 160px 0;
   margin: 0 auto;

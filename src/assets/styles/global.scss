@@ -1,3 +1,8 @@
-body{
-  background: red!important;
+// TODO: Move mix-in to a global file
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

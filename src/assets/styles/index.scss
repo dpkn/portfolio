@@ -17,15 +17,6 @@ html,body,#app{
   display: inline-block;
 }
 
-// TODO: Move mix-in to a global file
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
- // TODO: MOVE ALL THIS TO GLOBL
 .portfolio{
   background: #FAFAFA;
   width: 100%;
