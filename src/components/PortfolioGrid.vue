@@ -1,7 +1,7 @@
 <template>
   <section class="portfolio">
     <section class="buttons">
-      <router-link tag="button":to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
         all
       </router-link>
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'photography'} }">
