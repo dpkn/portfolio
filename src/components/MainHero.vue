@@ -1,5 +1,6 @@
 <template>
-  <section class="hero">
+  <section class="hero container">
+    <img class="headshot pull-right" src="../assets/images/headshot.jpg" alt="Headshot" />
     <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, a <span>creative developer</span>
       working and experimenting at the intersection of art and technology.
       I currently study Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
@@ -9,7 +10,6 @@
       <a href="http://instagram.com/danielkorssen" target="_blank">Instagram</a>,
       or <a href="#">write me a message</a>.
     </h1>
-    <img class="headshot pull-right" src="../assets/images/headshot_square2.png" alt="Headshot" />
   </section>
 </template>
 
@@ -22,8 +22,6 @@ export default {
 <style scoped lang="scss">
 .hero{
   padding:100px 0 160px 0;
-  margin: 0 auto;
-  max-width: 1000px;
   @include clearfix;
 }
 .hero h1{
@@ -48,8 +46,11 @@ export default {
   width: 250px;
   margin-top: -30px;
   border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition:1s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition:1s;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 .headshot:hover{
   transform: rotate(360deg);
