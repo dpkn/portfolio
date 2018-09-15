@@ -1,8 +1,8 @@
 <template>
   <footer>
-  <p>
-    &copy;{{ new Date().getFullYear() }} Dani&euml;l Korssen, Interaction Designer.
-  </p>
+    <p>
+      &copy;{{ new Date().getFullYear() }} Dani&euml;l Korssen, Interaction Designer.
+    </p>
   </footer>
 </template>
 
