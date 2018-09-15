@@ -5,6 +5,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Contact from './views/Contact.vue';
 import PortfolioItem from './views/PortfolioItem.vue';
+import HkuMain from './views/HkuMain.vue';
 
 Vue.use(Router);
 
@@ -18,6 +19,16 @@ export default new Router({
       path: '/portfolio/:filter',
       name: 'portfolioFilter',
       component: Home,
+    },
+    {
+      path: '/hku',
+      name: 'HkuMain',
+      component: HkuMain,
+    },
+    {
+      path: '/hku/:year:/:item',
+      name: 'HkuMain',
+      component: HkuMain,
     },
     {
       path: '/contact',
