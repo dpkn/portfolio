@@ -1,6 +1,6 @@
 <template>
   <section class="portfolio">
-    <section class="buttons">
+    <section class="button-group">
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
         all
       </router-link>
@@ -10,8 +10,8 @@
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'web'} }">
         website
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'experiment'} }">
-        experiment
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'branding'} }">
+        branding
       </router-link>
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'test'} }">
         test
@@ -20,7 +20,7 @@
         hello hello
       </router-link>
     </section>
-    <section class="portfolio-grid">
+    <section class="portfolio-grid container">
       <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item"
         :class="item.tags">
           <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
@@ -83,6 +83,7 @@ export default {
   },
   watch: {
     /* eslint func-names: ["error", "never"] */
+    // If the route changes, it means that another filter is applied.
     '$route.params.filter': function (filterName) {
       let filter;
       if (filterName === 'all') {
@@ -97,10 +98,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.portfolio{
+  background: #FAFAFA;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  @include clearfix;
+  min-height: 800px;
+}
 .portfolio-grid{
-  max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
   &:after {
     content: "";
@@ -112,15 +118,22 @@ export default {
 }
 .portfolio-item{
   width: 47%;
-  width: -webkit-calc(50% - 30px);
+  width: -webkit-calc(50% - 20px);
   float:left;
   display: inline-block;
   position: relative;
   border-radius: 3px;
-  margin: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background: #323232;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
   overflow: hidden;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+}
+.portfolio-item:nth-child(2){
+  margin-right: 0;
 }
 .portfolio img {
   display: block;
@@ -159,6 +172,9 @@ export default {
     h1{
       font-size: 2em;
       font-weight: 700;
+    }
+    p{
+      padding: 0 50px;
     }
   }
   a,a:visited{
