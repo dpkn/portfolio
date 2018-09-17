@@ -5,7 +5,9 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Contact from './views/Contact.vue';
 import PortfolioItem from './views/PortfolioItem.vue';
-import HkuMain from './views/HkuMain.vue';
+
+import SubPage from './views/SubPage.vue';
+import SubPageContent from './views/SubPageContent.vue';
 
 Vue.use(Router);
 
@@ -22,13 +24,14 @@ export default new Router({
     },
     {
       path: '/hku',
-      name: 'HkuMain',
-      component: HkuMain,
-    },
-    {
-      path: '/hku/:year:/:item',
-      name: 'HkuMain',
-      component: HkuMain,
+      name: 'Hku',
+      component: SubPage,
+      children: [
+        {
+          path: ':id',
+          component: SubPageContent,
+        },
+      ],
     },
     {
       path: '/contact',
@@ -41,8 +44,8 @@ export default new Router({
       component: PortfolioItem,
     },
   ],
-  // scrollBehavior(to, from, savedPosition) {
-  // //  return { x: 0, y: 0 };
-  // },
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   linkActiveClass: 'active',
 });
