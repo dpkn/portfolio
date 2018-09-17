@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio-item">
     <div class="info">
+      <router-link to="/" class="back-button">&larr; PORTFOLIO</router-link>
       <h1>{{item.title}}</h1>
       <h2 v-if="item.subtitle">
         {{item.subtitle}}
@@ -64,6 +65,9 @@ export default {
   max-width: 1000px;
   margin: 40px auto;
   text-align: left;
+  .back-button{
+    color:#000;
+  }
 }
 h1,h2{
   margin: 0;
