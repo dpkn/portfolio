@@ -3,7 +3,7 @@
     <img class="headshot pull-right" src="../assets/images/headshot.jpg" alt="Headshot" />
     <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, a <span>creative developer</span>
       working and experimenting at the intersection of art and technology.
-      I currently study Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
+      I'm currently studying Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
       You find me on
       <a href="https://github.com/dpkn" target="_blank">GitHub</a>,
       <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
