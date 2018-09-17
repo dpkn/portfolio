@@ -4,20 +4,14 @@
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
         all
       </router-link>
+      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'web'} }">
+        web
+      </router-link>
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'photography'} }">
         photography
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'web'} }">
-        website
-      </router-link>
       <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'branding'} }">
         branding
-      </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'test'} }">
-        test
-      </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'testmjfdjf'} }">
-        hello hello
       </router-link>
     </section>
     <section class="portfolio-grid container">
