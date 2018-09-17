@@ -1,8 +1,11 @@
 <template>
   <header class="navbar container">
-    <h1 class="pull-left">Daniël Korssen</h1>
+    <router-link to="/portfolio">
+      <h1 class="pull-left">Daniël Korssen</h1>
+    </router-link>
     <nav class="pull-right">
       <router-link to="/portfolio">work</router-link>
+      <a href="hku/resume.pdf" target="_blank">resume</a>
       <router-link to="/hku">hku</router-link>
     </nav>
   </header>
@@ -20,20 +23,20 @@ export default {
   box-sizing: border-box;
   @include clearfix;
 }
-.navbar h1, a{
+h1, a{
   margin: 0;
-  font-size: 2em;
   font-weight: bold;
   text-decoration: none;
   color:#000;
 }
-.active{
-  border: 2px solid #000;
-  border-radius: 3px;
-}
-a{
+nav a{
   padding: 5px 10px;
   font-size: 1.5em;
   margin-left: 10px;
+  border-radius: 3px;
+  &.active{
+    border: 2px solid #000;
+    margin-left: 6px;
+  }
 }
 </style>
