@@ -2,8 +2,9 @@
 This repo contains my portfolio website, made with [Vue](https://github.com/vuejs/vue), [Vue Router](https://github.com/vuejs/vue-router), [Normalize.css](https://github.com/necolas/normalize.css), and is scaffholded using the [Vue CLI](https://github.com/vuejs/vue-cli)
 
 ## Directories
-| /src/assets       | Static assets like fonts, images and styles                   |   |
+| Directory         | Purpose                                                       |   |
 |-------------------|---------------------------------------------------------------|---|
+| /src/assets       | Static assets like fonts, images and styles                   |   |
 | /src/views        | The Views used by Vue Router                                  |   |
 | /src/components   | Vue Components that are used in the Views                     |   |
 |                   |                                                               |   |
