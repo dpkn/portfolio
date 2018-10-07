@@ -12,7 +12,7 @@
 
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
-import pages from '../assets/pages.json';
+import axios from 'axios';
 
 export default {
   name: 'SubPage',
@@ -26,11 +26,15 @@ export default {
     };
   },
   mounted() {
-    this.pages = pages;
-    // If no page id is specified, go to the first page in the list
-    if (!this.$route.params.id) {
-      this.$router.push(`/hku/${Object.keys(this.pages)[0]}`);
-    }
+    axios.get('hku.json')
+      .then((response) => {
+      // handle success
+        this.pages = response.data;
+        // If no page id is specified, go to the first page in the list
+        if (!this.$route.params.id) {
+          this.$router.push(`/hku/${Object.keys(this.pages)[0]}`);
+        }
+      });
   },
   watch: {
     /* eslint func-names: ["error", "never"] */
