@@ -1,5 +1,8 @@
 @import url('inter-ui.css');
 
+*{
+  box-sizing: border-box;
+}
 html,body,#app{
   width: 100%;
   height: 100%;
@@ -7,6 +10,7 @@ html,body,#app{
   padding: 0;
   font-family: 'Inter UI', sans-serif;
 }
+
 .container{
   max-width: 1000px;
   margin:0 auto;
@@ -15,18 +19,18 @@ html,body,#app{
   }
 }
 
-
-/* Helper classes */
-.pull-left{
-  float: left;
-  display: inline-block;
+a{
+  color:#000;
+  transition:color .5s;
+  &:visited{
+    color:#000;
+  }
+  &:hover{
+    color:#6f6f6f;
+  }
 }
-.pull-right{
-  float:right;
-  display: inline-block;
-}
 
-/* Buttons */
+// Buttons
 .button-group{
   max-width: 500px;
   margin: 20px auto;
@@ -52,6 +56,16 @@ html,body,#app{
   &:focus{
     outline:none;
   }
+}
+
+/* Helper classes */
+.pull-left{
+  float: left;
+  display: inline-block;
+}
+.pull-right{
+  float:right;
+  display: inline-block;
 }
 
 /* Page transitions */
