@@ -1,14 +1,13 @@
 <template>
   <section class="hero container">
     <img class="headshot pull-right" src="../assets/images/headshot.jpg" alt="Headshot" />
-    <h1 class="pull-left">Hi! I am Dani&euml;l Korssen, a <span>creative developer</span>
+    <h1 class="pull-left">Hi! I am Dani&euml;l, a <span>creative developer</span>
       working and experimenting at the intersection of art and technology.
-      I'm currently studying Interaction Design at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
-      You find me on
+      I'm currently studying <span>Interaction Design</span> at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
+      You can find me on
       <a href="https://github.com/dpkn" target="_blank">GitHub</a>,
       <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
-      <a href="http://instagram.com/danielkorssen" target="_blank">Instagram</a>,
-      or <a href="#">write me a message</a>.
+      or <a href="mailto:daan.korssen@student.hku.nl">write me a message</a>.
     </h1>
   </section>
 </template>
@@ -32,16 +31,7 @@ export default {
   }
   max-width: 700px;
 }
-.hero a{
-  color:#000;
-  transition:color .5s;
-  &:visited{
-    color:#000;
-  }
-  &:hover{
-    color:#6f6f6f;
-  }
-}
+
 .headshot{
   width: 250px;
   margin-top: -30px;
@@ -51,8 +41,5 @@ export default {
   @media screen and (max-width: 1000px) {
     display: none;
   }
-}
-.headshot:hover{
-  transform: rotate(360deg);
 }
 </style>
