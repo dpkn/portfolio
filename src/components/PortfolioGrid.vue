@@ -14,7 +14,7 @@
         branding
       </router-link>
     </section>
-    <section class="portfolio-grid container">
+    <section id="portfolio-grid" class="portfolio-grid container">
       <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item"
         :class="item.tags">
           <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
@@ -45,34 +45,40 @@ import 'video.js/dist/video-js.css';
 import 'video.js';
 import imagesLoaded from 'imagesloaded';
 import Isotope from 'isotope-layout';
-
-// Import Portfolio data
-import portfolioItems from '../assets/portfolio/portfolio.json';
+import axios from 'axios';
 
 export default {
   name: 'PortfolioGrid',
   created() {
     // Import all portfolio items from the .json file into this components data
-    this.portfolioItems = portfolioItems;
+  //  this.portfolioItems = portfolioItems;
+    axios.get('portfolio.json')
+      .then((response) => {
+      // handle success
+        this.portfolioItems = response.data;
+        // On each new image load, recalculate the grid layout
+        // Otherwise the newly loaded images will throw off the
+        // layout
+        // Set up the grid with Masonry and Isotope
+        this.grid = new Isotope('#portfolio-grid', {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'masonry',
+        });
+        imagesLoaded('.portfolio-grid', () => {
+          console.log('e');
+          this.grid.layout();
+        });
+      });
   },
   mounted() {
-    // Set up the grid with Masonry and Isotope
-    this.grid = new Isotope('.portfolio-grid', {
-      itemSelector: '.portfolio-item',
-      layoutMode: 'masonry',
-    });
-
-    // On each new image load, recalculate the grid layout
-    // Otherwise the newly loaded images will throw off the
-    // layout
-    imagesLoaded('.portfolio-grid', () => {
-      this.grid.layout();
-    });
+  },
+  updated() {
+    this.grid.layout();
   },
   data() {
     return {
       baseUrl: process.env.BASE_URL,
-      portfolioItems,
+      portfolioItems: {},
     };
   },
   watch: {
@@ -85,7 +91,9 @@ export default {
       } else {
         filter = `.${filterName}`;
       }
+      console.log(filter, this.grid);
       this.grid.arrange({ filter });
+      this.grid.layout();
     },
   },
 };
@@ -94,11 +102,12 @@ export default {
 <style scoped lang="scss">
 .portfolio{
   background: #FAFAFA;
-  width: 100%;
   text-align: center;
   padding-top: 20px;
   @include clearfix;
   min-height: 800px;
+
+    box-sizing: border-box;
 }
 .portfolio-grid{
   text-align: center;
@@ -108,7 +117,7 @@ export default {
     clear: both;
   }
   @include clearfix;
-  box-sizing: border-box;
+
 }
 .portfolio-item{
   width: 47%;
@@ -123,6 +132,7 @@ export default {
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
   overflow: hidden;
   @media screen and (max-width: 800px) {
+    margin-right: 0;
     width: 100%;
   }
 }
