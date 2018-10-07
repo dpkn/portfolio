@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
+    "axios": "^0.18.0",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
     "normalize.css": "^8.0.0",
