@@ -1,0 +1,47 @@
+/*
+  This file exists because of the school assignment that
+  requires a 'style switch'
+  I am aware I used !important a lot, but I think it's fair due
+  to the weird nature of the assignment
+*/
+.alternative{
+    font-family: 'Times New Roman'!important;
+    background: #000;
+    color:#fff;
+    .pull-left,.pull-right{
+      float: none;
+    }
+    header{
+      background: #f2f2f2;
+      bottom: 0;
+      z-index: 1000;
+      width: 200px;
+      height: 100%;
+      position:fixed;
+      margin: 0;
+      text-align: center;
+      font-family: 'Times New Roman';
+      h1{
+        font-size:2.3em;
+      }
+    }
+    .headshot{
+      border-radius: 0!important;
+    }
+    .hero img{
+      display: block;
+    }
+    .portfolio{
+      background: #000!important;
+    }
+    nav{
+      text-transform: uppercase;
+      a{
+        display: block;
+        margin: 50px 0;
+      }
+    }
+    .hero h1 a,.hero h1 a:visited{
+      color:#fff;
+    }
+}
