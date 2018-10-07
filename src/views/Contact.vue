@@ -1,11 +1,10 @@
 <template>
   <div id="contact">
-    <MainNavigation></MainNavigation>
     <div class="container">
       <form method="POST" action="http://home.hku.nl/cgi-bin/FormMail.cgi">
         <input type="hidden" name="recipient" value="daan.korssen@student.hku.nl">
         <input type="hidden" name="subject" value="Feedback van website via formulier">
-        <input type="hidden" name="redirect" value="http://studenthome.hku.nl/~iris.schuit/contact/send">
+        <input type="hidden" name="redirect" value="http://studenthome.hku.nl/~daan.korssen/#/contact?send=true">
         <input type="hidden" name="required" value="email,realname">
 
         Email: <br> <input type="text" name="email" size="32" maxlength="40"><br>
