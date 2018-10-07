@@ -1,0 +1,99 @@
+{
+	"year-1":{
+		"title":"Jaar 1",
+		"courses":{
+			"drawing-animation":{
+				"name":"Tekenen & Animatie",
+				"homework":[
+					{
+						"date":"01-01-0000",
+						"title":"Animatie: Les 2 - Stop-motion",
+						"url":"https://www.youtube.com/watch?v=dkZaa3qtnoQ"
+					},
+					{
+						"date":"01-01-0000",
+						"title":"Animatie: Les 1 - Animaties",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_Animatie1.mp4"
+					},
+					{
+						"date":"2018-09-20",
+						"title":"Tekenen: les 1",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_les1.pdf"
+					},
+					{
+						"date":"2018-09-27",
+						"title":"Tekenen: les 2",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_les2.pdf"
+					},
+					{
+						"date":"2018-09-27",
+						"title":"Tekenen: les 3",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_les3.pdf"
+					}
+				]
+			},
+			"look-inspire":{
+				"name":"Look and Inspire",
+				"homework":[
+					{
+						"date":"2018-09-14",
+						"title":"Logboek",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_LookAndInspire_Logboek.pdf"
+					}
+				]
+			},
+			"project-portfolio":{
+				"name":"Project Portfolio",
+				"homework":[
+					{
+						"date":"2018-09-24",
+						"title":"Design Research: Personas",
+						"url":"#"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Portfolio Deel 1: Logboek",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_logboek_Portfolio_1.pdf"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Portfolio Deel 1: .Zip Versie",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_Portfolio_Versie1.zip"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Portfolio Deel 1: Online versie",
+						"url":"http://studenthome.hku.nl/~daan.korssen/versie1"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Content: Interview Medestudent / Favoriete gadget / Wat is IxD",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_Portfolio_Content.pdf"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Content: Toelatingsopdracht",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_Toelating_DesignDocument.pdf"
+					},
+					{
+						"date":"2018-09-24",
+						"title":"Content: Resume",
+						"url":"http://studenthome.hku.nl/~daan.korssen/homework/DaanKorssen_Resume.pdf"
+					}
+				]
+			}
+		}
+	},
+	"year-2":{
+		"title":"Jaar 2",
+		"content":"<h2>Nog geen content</h2><p></p>"
+	},
+	"year-3":{
+		"title":"Jaar 3",
+		"content":"<h2>Nog geen content</h2><p></p>"
+	},
+	"year-4":{
+		"title":"Jaar 4",
+		"content":"<h2>Nog geen content</h2><p></p>"
+	}
+}

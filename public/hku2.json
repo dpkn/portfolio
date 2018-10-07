@@ -1,11 +1,15 @@
 {
+	"portfolio-v1":{
+		"title":"Oplevering 1",
+		"content":"<h2>Oplevering Portfolio v1</h2><p>Een .zip van de eerste versie van mijn portfolio is <a href=\"hku/hku.zip\">hier</a> te vinden, een online versie <a href=\"http://studenthome.hku.nl/~daan.korssen/versie1\">hier</a></p>"
+	},
 	"wat-is-ixd": {
 		"title":"Wat is IxD?",
 		"content":"<h2>Wat is Interaction Design?</h2><p>Interaction Design beslaat in mijn ogen alles waarbij de interactie tussen mens en een ontworpen voorwerp een rol speelt. Dit kan rijken van commerciële toepassingen zoals user interface design tot abstracte interactieve kunst. Een goede interaction designer kan er voor zorgen dat ontwerpen intuïtief goed worden gebruikt door de gebruiker zonder uren te spenderen aan het lezen van handledingen.</p><p>Ik ga IxD studeren omdat ik mezelf wil ontwikkelen op het raakvlak van technologie en kunst, en in mijn ogen past deze richting daar het beste bij. Hiervoor was ik werkzaam als webdeveloper, maar ik merkte al snel dat die baan te veel gericht was op het uitvoeren en bouwen van wat andere mensen hadden bedacht. Ik wil graag zelf de creatieve leiding hebben en daarom heb ik besloten toch nog te gaan studeren.</p>"
 	},
 	"toelatingsopdracht": {
 		"title":"Toelatingsopdracht",
-		"content":"<h2>Toelatingsopdracht</h2><p></p>"
+		"content":"<h2>Toelatingsopdracht</h2><p>Mijn toelatingsopdracht is <a href=\"hku/toelatingsopdracht.pdf\">hier</a> te vinden</p>"
 	},
 	"favoriete-gadget": {
 		"title":"Favoriete gadget",

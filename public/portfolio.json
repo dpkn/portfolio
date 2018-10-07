@@ -1,0 +1,85 @@
+{
+	"how-many-weeks-left": {
+		"hidden": false,
+		"title": "How many weeks left?",
+		"subtitle": "Fuel your midlife crisis with statistics",
+		"description":"Ever needed a tool to stress you out and make you re-evaluate your life choices? Howmanyweeksleft.com calculates your life expectancy based on your birthdate and demographic, showing you how much time of your life you already wasted and, more importantly, how many weeks are left until you (statistically) die. Use with caution; feelings of self-loath, remorse, and anxiety may occur.",
+		"cta":"<a href=\"http://howmanyweeksleft.com\" target=\"_blank\">Visit howmanyweeksleft.com</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/howmanyweeksleft/thumbnail.png"
+		},
+		"tags":["web"]
+	},
+	"bloclock": {
+		"hidden": false,
+		"title": "Bloclock",
+		"subtitle": "A clock showing you the time you've left before you go to bed",
+		"description":"Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. When you go to bed, all of your blocks will be gone. This way of time framing makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/bloclock/thumbnail.png"
+		},
+		"tags":["web"]
+	},
+	"lesya": {
+		"hidden": false,
+		"title": "Lesya",
+		"subtitle": "A photography experiment",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/lesya/thumbnail.jpg"
+		},
+		"layout":"filmstrip",
+		"content":{
+			"1":{
+				"url":"portfolio/lesya/lesya_6.jpg"
+			},
+			"2":{
+				"url":"portfolio/lesya/lesya_2.jpg"
+			},
+			"3":{
+				"url":"portfolio/lesya/lesya_4.jpg"
+			},
+			"4":{
+				"url":"portfolio/lesya/lesya_1.jpg"
+			},
+			"5":{
+				"url":"portfolio/lesya/lesya_5.jpg"
+			},
+			"6":{
+				"url":"portfolio/lesya/lesya_3.jpg"
+			}
+		},
+		"tags":["photography","experiment"]
+	},
+	"happy": {
+		"hidden": false,
+		"title": "Happy",
+		"subtitle": "Branding a coffee shop",
+		"description":"For a coffee and tea shop called Happy, I got the oportunity to design a brand identity from scratch. This project included multiple logos, as well as posters and digital signage animations. Download the brand identity document (.pdf), or look at some of the artwork and animations below.",
+		"cta":"<a href=\"portfolio/happy/brand_identity.pdf\" target=\"_blank\">Download the brand identity document (PDF)</a>,  or look at some of the artwork and animations below.",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/happy/thumbnail.jpg"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/happy/happy_coffee_cup.jpg",
+				"class":"sixty"
+			},
+			"2":{
+				"url":"portfolio/happy/happy_poster_coco.jpg",
+				"class":"fourty"
+			},
+			"3":{
+				"url":"portfolio/happy/happy_glass.jpg"
+			},
+			"4":{
+				"url":"portfolio/happy/happy_poster_woman.jpg"
+			}
+		},
+		"tags":["branding"]
+	}
+}
