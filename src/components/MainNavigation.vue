@@ -5,8 +5,8 @@
     </router-link>
     <nav class="pull-right">
       <router-link to="/portfolio">work</router-link>
-      <a href="hku/resume.pdf" target="_blank">resume</a>
       <router-link to="/hku">hku</router-link>
+      <router-link to="/contact">contact</router-link>
     </nav>
   </header>
 </template>
@@ -27,7 +27,6 @@ h1, a{
   margin: 0;
   font-weight: bold;
   text-decoration: none;
-  color:#000;
 }
 nav a{
   padding: 5px 10px;
@@ -37,6 +36,7 @@ nav a{
   &.active{
     border: 2px solid #000;
     margin-left: 6px;
+    color:#000;
   }
 }
 </style>
