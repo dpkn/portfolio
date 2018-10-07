@@ -30,15 +30,17 @@ export default {
     // This function is called whenever the ?style parameter in the url
     // changes. It switches between two website themes by applying a class to the #app
     // element
-    '$route.query.style': function (style) {
-      this.switchStyle(style);
+
+    // TODO: REMOVE AFTER Project Portfolio is over.
+    '$route.query.style': function (styleParameter) {
+      this.switchStyle(styleParameter);
     },
   },
   methods: {
-    switchStyle(style) {
-      if (style === '2') {
+    switchStyle(styleParameter) {
+      if (styleParameter === '2') {
         document.getElementById('app').className = 'alternative';
-      } else {
+      } else if (styleParameter === '1') {
         document.getElementById('app').className = '';
       }
     },
