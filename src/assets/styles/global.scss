@@ -3,8 +3,6 @@
   It gets auto injected into all the .Vue modules,
   as described in the vue.config.js
 */
-$background: #fff;
-$font-color: #000;
 
 @mixin clearfix {
   &:after {
