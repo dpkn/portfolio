@@ -15,11 +15,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/portfolio/all',
+      redirect: '/portfolio',
     },
     {
-      path: '/portfolio/:filter',
-      name: 'portfolioFilter',
+      path: '/portfolio',
+      name: 'portfolio',
       component: Home,
     },
     {
@@ -39,13 +39,16 @@ export default new Router({
       component: Contact,
     },
     {
-      path: '/:id',
+      path: 'port/:id',
       name: 'PortfolioItem',
-      component: PortfolioItem,
+      components: {
+        default: Home,
+        modal: PortfolioItem,
+      },
     },
   ],
   scrollBehavior() {
-    return { x: 0, y: 0 };
+    // return { x: 0, y: 0 };
   },
   linkActiveClass: 'active',
 });

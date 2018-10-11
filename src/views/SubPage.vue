@@ -1,6 +1,5 @@
 <template>
   <div class="test">
-    <MainNavigation></MainNavigation>
     <nav class="sub-nav container">
         <router-link v-for="(page,key) in pages" :to="'/hku/'+key" :key="key">
           {{page.title}}
