@@ -69,6 +69,7 @@ export default {
 </script>
 
 <style lang="scss">
+  width: 100%;
 .info{
   margin:70px auto;
   text-align: left;
