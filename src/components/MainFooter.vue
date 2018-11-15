@@ -1,7 +1,9 @@
 <template>
   <footer>
     <p>
-      &copy; {{ new Date().getFullYear() }} Dani&euml;l Korssen, Interaction Designer
+      &copy; Dani&euml;l Korssen<br/>
+
+    </br><a href="https://github.com/dpkn/portfolio" target="_blank">Source code on GitHub</a>
     </p>
   </footer>
 </template>
