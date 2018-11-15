@@ -7,7 +7,7 @@
       You can find me on
       <a href="https://github.com/dpkn" target="_blank">GitHub</a>,
       <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
-      or <a href="mailto:daan.korssen@student.hku.nl">write me a message</a>.
+      or <a href="#" onclick="this.href=atob('bWFpbHRvOmRhYW5rb3Jzc2VuJTQwZ21haWwuY29t'); return true">write me a message.</a>
     </h1>
   </section>
 </template>
@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
 .hero{
-  padding:100px 0 160px 0;
+  padding:40px 0 80px 0;
   @include clearfix;
 }
 .hero h1{
