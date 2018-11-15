@@ -1,19 +1,21 @@
 <template>
   <section class="portfolio">
+
     <section class="button-group">
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'all'} }">
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'all'} }">
         all
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'web'} }">
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
         web
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'photography'} }">
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'photography'} }">
         photography
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolioFilter', params: {'filter':'branding'} }">
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'branding'} }">
         branding
       </router-link>
     </section>
+
     <section id="portfolio-grid" class="portfolio-grid container">
       <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item"
         :class="item.tags">
@@ -24,14 +26,18 @@
                     autoplay loop muted playsinline class="video-js"
                     data-setup='{"preload": "auto","fluid":true}'>
               <source
-                :src="`${baseUrl}videos/big_buck_bunny.webm`"
+                  :src="baseUrl + item.thumbnail.url"
                 type="video/webm">
-                <source
-                  :src="`${baseUrl}videos/big_buck_bunny.mp4`"
-                  type="video/mp4">
             </video>
             <div class="overlay">
-              <div class="text"><h1>{{ item.title }}</h1><p>{{ item.subtitle }}</p></div>
+              <div class="text">
+                <h1>{{ item.title }}</h1>
+                <p>
+                  {{
+                    (item.thumbnail.subtitle === undefined) ? item.subtitle : item.thumbnail.subtitle
+                  }}
+                </p>
+              </div>
             </div>
           </router-link>
       </div>
@@ -43,71 +49,66 @@
 // Import plugins
 import 'video.js/dist/video-js.css';
 import 'video.js';
+
 import imagesLoaded from 'imagesloaded';
 import Isotope from 'isotope-layout';
 import axios from 'axios';
 
 export default {
   name: 'PortfolioGrid',
-  created() {
-    // Import all portfolio items from the .json file into this components data
-  //  this.portfolioItems = portfolioItems;
-    axios.get('portfolio.json')
-      .then((response) => {
-      // handle success
-        this.portfolioItems = response.data;
-        // On each new image load, recalculate the grid layout
-        // Otherwise the newly loaded images will throw off the
-        // layout
-        // Set up the grid with Masonry and Isotope
-        this.grid = new Isotope('#portfolio-grid', {
-          itemSelector: '.portfolio-item',
-          layoutMode: 'masonry',
-        });
-        imagesLoaded('.portfolio-grid', () => {
-          console.log('e');
-          this.grid.layout();
-        });
-      });
-  },
-  mounted() {
-  },
-  updated() {
-    this.grid.layout();
-  },
   data() {
     return {
       baseUrl: process.env.BASE_URL,
       portfolioItems: {},
     };
   },
+  mounted() {
+    // Import all portfolio items from the .json file into this components data
+    axios.get('portfolio.json').then((response) => {
+      this.portfolioItems = response.data;
+    });
+  },
+  updated() {
+    // When Vue has finished rendering the portfolio items,
+    // wait for the images to load, then activate Isotope.
+    imagesLoaded('#portfolio-grid', () => {
+      this.grid = new Isotope('#portfolio-grid', {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'masonry',
+        masonry: {
+          gutter: 30,
+        },
+      });
+      if (this.$route.params.filter === '' || !this.$route.params.filter) {
+        this.$router.push({ name: 'portfolio', params: { filter: 'all' } });
+      }
+    });
+  },
   watch: {
     /* eslint func-names: ["error", "never"] */
     // If the route changes, it means that another filter is applied.
     '$route.params.filter': function (filterName) {
-      let filter;
-      if (filterName === 'all') {
-        filter = '*';
-      } else {
-        filter = `.${filterName}`;
+      if (this.grid) {
+        if (filterName === 'all' || !filterName) {
+          this.filter = '*';
+        } else {
+          this.filter = `.${filterName}`;
+        }
+        this.grid.arrange({ filter: this.filter });
+        this.grid.layout();
       }
-      console.log(filter, this.grid);
-      this.grid.arrange({ filter });
-      this.grid.layout();
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
+
 .portfolio{
   background: #FAFAFA;
   text-align: center;
-  padding-top: 20px;
   @include clearfix;
-  min-height: 800px;
-
-    box-sizing: border-box;
+  min-height: 600px;
 }
 .portfolio-grid{
   text-align: center;
@@ -120,14 +121,13 @@ export default {
 
 }
 .portfolio-item{
-  width: 47%;
-  width: -webkit-calc(50% - 20px);
+  width: 50%;
+  width: -webkit-calc(50% - 15px);
   float:left;
   display: inline-block;
   position: relative;
   border-radius: 3px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background: #323232;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
   overflow: hidden;
@@ -135,9 +135,6 @@ export default {
     margin-right: 0;
     width: 100%;
   }
-}
-.portfolio-item:nth-child(2){
-  margin-right: 0;
 }
 .portfolio img {
   display: block;
