@@ -3,10 +3,6 @@ import 'normalize.css';
 import 'animate.css';
 import '@/assets/styles/index.scss';
 
-// Import alternative stylesheet
-// It only applies when the body has the class '.alternative'
-import '@/assets/styles/override.scss';
-
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
