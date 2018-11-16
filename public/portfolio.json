@@ -62,7 +62,6 @@
 		"hidden": false,
 		"title": "Lesya",
 		"subtitle": "A photography experiment",
-		"description":"Beamer photos",
 		"thumbnail":{
 			"type":"img",
 			"url":"portfolio/lesya/thumbnail.jpg"
