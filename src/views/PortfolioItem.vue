@@ -10,8 +10,21 @@
     </div>
     <transition name="fade" mode="out-in">
       <div id="portfolio-content" :class="item.layout" v-show="imagesLoaded">
-        <img :src="contents.url" v-for="(contents,key) in item.content"
+        <div v-for="(contents,key) in item.content"
         :key="key" class="item" :class="contents.class">
+          <video v-if="contents.type=='video'"
+                  autoplay loop muted playsinline class="video-js"
+                  >
+            <source
+               :src="baseUrl + contents.url"
+              type="video/mp4">
+          </video>
+          <div v-else-if="contents.type=='text'">
+            <h1>{{contents.title}}</h1>
+            <div v-html="contents.description"></div>
+          </div>
+          <img v-else :src="baseUrl + contents.url"/>
+        </div>
       </div>
   </transition>
   </div>
@@ -22,10 +35,15 @@
 import imagesLoaded from 'imagesloaded';
 import axios from 'axios';
 
+// Import plugins
+import 'video.js/dist/video-js.css';
+import videojs from 'video.js';
+
 export default {
   name: 'PortfolioItem',
   data() {
     return {
+      baseUrl: process.env.BASE_URL,
       imagesLoaded: false,
       item: {
         title: '',
@@ -36,12 +54,12 @@ export default {
   },
   methods: {
     getItemContent(id) {
-      axios.get('portfolio.json').then((response) => {
+      axios.get(`${this.baseUrl}portfolio.json`).then((response) => {
         if (response.data[id]) {
           this.item = response.data[id];
         } else {
           // If the provided id doesn't match with a portfolio entry, route back to home
-          console.log('cant fin');
+          // FIXME: ????? Route back on undefined project
         }
       });
     },
@@ -51,10 +69,12 @@ export default {
   },
   updated() {
     const imgLoad = imagesLoaded('#portfolio-content');
-    imgLoad.on('done', (instance, image) => {
+    imgLoad.on('done', () => {
       this.imagesLoaded = true;
-      console.log(instance, image);
     });
+    if (document.querySelector('.video-js')) {
+      videojs(document.querySelector('.video-js'), { preload: 'auto', fluid: true });
+    }
   },
 };
 </script>
@@ -68,7 +88,9 @@ export default {
   top:0;
   left:0;
   z-index: 9999;
-  overflow-y: auto;
+  overflow-y:scroll;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 .info{
   margin-top: 50px;
@@ -95,6 +117,7 @@ p a{
 /* The different types of Portfolio layouts are defined here*/
 .grid{
   .item{
+    background: #f2f2f2;
     display: inline-block;
     width: 50%;
     float:left;
@@ -118,6 +141,15 @@ p a{
     }
   }
   @include clearfix;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+video{
+  background: #f2f2f2;
 }
 
 .filmstrip {
