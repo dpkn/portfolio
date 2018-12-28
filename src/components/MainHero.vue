@@ -1,6 +1,6 @@
 <template>
   <section class="hero container">
-    <img class="headshot pull-right" src="../assets/images/headshot.jpg" alt="Headshot" />
+    <img class="headshot pull-right" src="/headshot.jpg" alt="Headshot" />
     <h1 class="pull-left">Hi! I am Dani&euml;l, a <span>creative developer</span>
       working and experimenting at the intersection of art and technology.
       I'm currently studying <span>Interaction Design</span> at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
