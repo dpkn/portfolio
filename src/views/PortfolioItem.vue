@@ -76,6 +76,14 @@ export default {
       videojs(document.querySelector('.video-js'), { preload: 'auto', fluid: true });
     }
   },
+  metaInfo() {
+    return {
+      title: this.item.title,
+      meta: [
+        { vmid: 'description', name: 'description', content: this.item.description },
+      ],
+    };
+  },
 };
 </script>
 
