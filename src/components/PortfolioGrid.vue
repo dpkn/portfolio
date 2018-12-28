@@ -27,7 +27,7 @@
                     data-setup='{"preload": "auto","fluid":true}'>
               <source
                   :src="baseUrl + item.thumbnail.url"
-                type="video/webm">
+                type="video/mp4">
             </video>
             <div class="overlay">
               <div class="text">
@@ -64,7 +64,7 @@ export default {
   },
   mounted() {
     // Import all portfolio items from the .json file into this components data
-    axios.get('portfolio.json').then((response) => {
+    axios.get(`${this.baseUrl}portfolio.json`).then((response) => {
       this.portfolioItems = response.data;
     });
   },

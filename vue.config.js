@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  baseUrl: '',
+  baseUrl: '/',
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'scss',
