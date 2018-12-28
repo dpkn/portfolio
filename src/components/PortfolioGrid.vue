@@ -34,7 +34,8 @@
                 <h1>{{ item.title }}</h1>
                 <p>
                   {{
-                    (item.thumbnail.subtitle === undefined) ? item.subtitle : item.thumbnail.subtitle
+                    (item.thumbnail.subtitle === undefined) ?
+                     item.subtitle : item.thumbnail.subtitle
                   }}
                 </p>
               </div>
