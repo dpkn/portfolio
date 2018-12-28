@@ -8,6 +8,7 @@ import PortfolioItem from './views/PortfolioItem.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -18,7 +19,7 @@ export default new Router({
       redirect: '/portfolio/all',
     },
     {
-      path: '/portfolio/:filter',
+      path: '/portfolio/:filter?',
       name: 'portfolio',
       component: Home,
     },
@@ -31,8 +32,12 @@ export default new Router({
       },
     },
   ],
-  scrollBehavior() {
-    // return { x: 0, y: 0 };
+  scrollBehavior(to, from, savedPosition) {
+    // FIXME: Scrolling to top when moving back to home should be disabled
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { x: 0, y: 0 };
   },
   linkActiveClass: 'active',
 });
