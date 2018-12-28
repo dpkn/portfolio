@@ -1,4 +1,28 @@
 {
+	"self-portrait-i": {
+		"hidden": false,
+		"title": "Daniël 2",
+		"subtitle": "A not-so-smart AI self-portrait",
+		"description":"Daniël 2 is a chatbot that uses a machine learning model to generate text messages as if it were me. Its neural network is trained on the 59353 WhatsApp messages I sent over the past five years. The data on which this model is trained encompasses everything I've shared with my closest friends, from my darkest secrets to my deepest crushes. The results are hilariously terrible.",
+		"cta":"<a href=\"https://github.com/dpkn/self-portrait\" target=\"_blank\">See the code and documentation on GitHub</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/self-portrait/desktop_photo.jpg"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/self-portrait/desktop_photo_mid.jpg",
+				"class":"fifty"
+			},
+			"2":{
+				"type":"video",
+				"url":"portfolio/self-portrait/thumbnail.mp4",
+				"class":"fifty"
+			}
+		},
+		"tags":["web"]
+	},
 	"how-many-weeks-left": {
 		"hidden": false,
 		"title": "How many weeks left?",
@@ -21,12 +45,13 @@
 	"bloclock": {
 		"hidden": false,
 		"title": "Bloclock",
-		"subtitle": "A clock showing you the time you've left before you go to bed",
+		"subtitle": "A more sensible approach to time",
 		"description":"Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. When you go to bed, all of your blocks will be gone. This way of time framing makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
 		"cta":"<a href=\"http://bloclock.com\" target=\"_blank\">Visit bloclock.com</a>",
 		"thumbnail":{
+			"subtitle": "A clock showing you the time you've left before you go to bed",
 			"type":"img",
-			"url":"portfolio/bloclock/thumbnail.png"
+			"url":"portfolio/bloclock/thumbnail.jpg"
 		},
 		"layout":"grid",
 		"content":{
@@ -40,8 +65,9 @@
 	"virtualeye": {
 		"hidden": false,
 		"title": "VirtualEye",
+		"subtitle":"Affordable intimacy for the massess",
 		"description":"In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
-		"subtitle":"A dystopian concept",
+		"cta":"<b>Model:</b> Amber Verrips",
 		"thumbnail":{
 			"type":"img",
 			"url":"portfolio/virtualeye/thumbnail.jpg",
@@ -61,8 +87,9 @@
 	"lesya": {
 		"hidden": false,
 		"title": "Lesya",
-		"subtitle": "A photography experiment",
+		"subtitle": "Photography experiments",
 		"thumbnail":{
+			"subtitle": "A serie of light photography experiments",
 			"type":"img",
 			"url":"portfolio/lesya/thumbnail.jpg"
 		},
