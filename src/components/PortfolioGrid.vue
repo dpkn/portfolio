@@ -8,11 +8,8 @@
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
         web
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'photography'} }">
-        photography
-      </router-link>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'branding'} }">
-        branding
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'visual'} }">
+        visual
       </router-link>
     </section>
 
