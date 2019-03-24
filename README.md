@@ -1,5 +1,5 @@
 # Portfolio Website
-This repo contains my portfolio website, made with [Vue](https://github.com/vuejs/vue) and is scaffholded using the [Vue CLI](https://github.com/vuejs/vue-cli)
+This repo contains my portfolio website, made with [Vue](https://github.com/vuejs/vue) and scaffholded using the [Vue CLI](https://github.com/vuejs/vue-cli)
 
 ## Directories
 | Directory         | Purpose                                                       |
@@ -8,7 +8,7 @@ This repo contains my portfolio website, made with [Vue](https://github.com/vuej
 | /src/views        | The Views used by Vue Router                                  |
 | /src/components   | Vue Components that are used in the Views                     |
 | /public           | Contains all static files that won't get processed by Webpack |
-| /public/portfolio | All static files for my professional portfolio                |
+| /public/portfolio | All static files for my portfolio work                        |
 | /dist             | The compiled output from Webpack that will be published       |
 
 ## Project setup
