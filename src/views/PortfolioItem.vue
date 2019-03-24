@@ -88,6 +88,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.text div{
+  max-width: 400px;
+  margin: 0 auto;
+}
 .portfolio-item-overview{
   background: #fff;
   width: 100%;
@@ -104,8 +108,13 @@ export default {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+a{
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif!important;
+}
 .cta a{
   font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif!important;
 }
 .back-button{
   color:#000;
@@ -115,7 +124,8 @@ h1,h2{
   margin: 0;
 }
 h2{
-  font-weight:400;
+  font-weight: 500;
+  color:#5E5C5C;
 }
 
 p a{
