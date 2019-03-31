@@ -1,4 +1,24 @@
 {
+	"bodies-gallery": {
+		"hidden": true,
+		"title": "The Bodies Gallery",
+		"subtitle": "",
+		"description":"The Bodies Gallery is a website that celebrates the variety of body shapes and sizes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br/><br/>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site.",
+		"cta":"<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</b>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/bodies-gallery/thumbnail.gif",
+			"subtitle":"A website celebrating the variety of body shapes and sizes"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/bodies-gallery/screenshot.png",
+				"class":"hundred"
+			}
+		},
+		"tags":["web"]
+	},
 	"self-portrait-i": {
 		"hidden": false,
 		"title": "Daniël 2",
@@ -132,35 +152,6 @@
 			},
 			"6":{
 				"url":"portfolio/lesya/lesya_3.jpg"
-			}
-		},
-		"tags":["visual"]
-	},
-	"happy": {
-		"hidden": false,
-		"title": "Happy",
-		"subtitle": "Branding a coffee shop",
-		"description":"For a coffee and tea shop called Happy, I got the oportunity to design a brand identity from scratch. This project included multiple logos, as well as posters and digital signage animations. Download the brand identity document (.pdf), or look at some of the artwork and animations below.",
-		"cta":"<a href=\"portfolio/happy/brand_identity.pdf\" target=\"_blank\">Download the brand identity document (PDF)</a>,  or look at some of the artwork and animations below.",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/happy/thumbnail.jpg"
-		},
-		"layout":"grid",
-		"content":{
-			"1":{
-				"url":"portfolio/happy/happy_coffee_cup.jpg",
-				"class":"sixty"
-			},
-			"2":{
-				"url":"portfolio/happy/happy_poster_coco.jpg",
-				"class":"fourty"
-			},
-			"3":{
-				"url":"portfolio/happy/happy_glass.jpg"
-			},
-			"4":{
-				"url":"portfolio/happy/happy_poster_woman.jpg"
 			}
 		},
 		"tags":["visual"]
