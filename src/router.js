@@ -36,9 +36,13 @@ export default new Router({
         modal: PortfolioItem,
       },
     },
+    {
+      path: '*',
+      redirect: 'portfolio/noteworthy',
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
-    if (to.name == 'portfolio') {
+    if (to.name === 'portfolio') {
       return savedPosition;
     }
     return { x: 0, y: 0 };
