@@ -10,14 +10,13 @@
 			"url":"portfolio/bodies-gallery/thumbnail.gif",
 			"subtitle":"A website celebrating the variety of body shapes and sizes"
 		},
-		"layout":"grid",
+		"layout":"blog",
 		"content":{
 			"1":{
-				"url":"portfolio/bodies-gallery/screenshot.png",
-				"class":"hundred"
+				"url":"portfolio/bodies-gallery/screenshot.png"
 			}
 		},
-		"tags":["web"]
+		"tags":["web","noteworthy"]
 	},
 	"self-portrait-i": {
 		"hidden": false,
@@ -41,7 +40,7 @@
 				"class":"fifty"
 			}
 		},
-		"tags":["web"]
+		"tags":["web","noteworthy"]
 	},
 	"how-many-weeks-left": {
 		"hidden": false,
@@ -53,14 +52,13 @@
 			"type":"img",
 			"url":"portfolio/howmanyweeksleft/thumbnail.png"
 		},
-		"layout":"grid",
+		"layout":"blog",
 		"content":{
 			"1":{
-				"url":"portfolio/howmanyweeksleft/header.gif",
-				"class":"hundred"
+				"url":"portfolio/howmanyweeksleft/screenshot.png"
 			}
 		},
-		"tags":["web"]
+		"tags":["web","noteworthy"]
 	},
 	"bloclock": {
 		"hidden": false,
@@ -77,26 +75,6 @@
 		"content":{
 			"1":{
 				"url":"portfolio/bloclock/bloclock.png",
-				"class":"hundred"
-			}
-		},
-		"tags":["web"]
-	},
-	"studentloan-be-gone": {
-		"hidden": false,
-		"title": "Student Loan be Gone",
-		"subtitle": "2019",
-		"description":"A Chrome extension that replaces your student loan debt on the Dutch governments website with The Communist Manifesto.",
-		"cta":"<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/debt-eraser/thumbnail.png",
-			"subtitle":"Chrome extension that replaces your student loan debt with The Communist Manifesto"
-		},
-		"layout":"grid",
-		"content":{
-			"1":{
-				"url":"portfolio/debt-eraser/screenshot.png",
 				"class":"hundred"
 			}
 		},
@@ -122,7 +100,7 @@
 				"url":"portfolio/virtualeye/stare.jpg"
 			}
 		},
-		"tags":["visual"]
+		"tags":["visual","noteworthy"]
 	},
 	"lesya": {
 		"hidden": false,
@@ -172,5 +150,59 @@
 			}
 		},
 		"tags":["visual"]
+	},
+	"piano-game": {
+		"hidden": false,
+		"title": "Pianio",
+		"subtitle": "A platform game playable using WebMIDI keyboard input",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/experiments/piano-game/thumbnail.png"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/experiments/piano-game/gameplay.png"
+			},
+			"2":{
+				"url":"portfolio/experiments/piano-game/splashscreen.png"
+			}
+		},
+		"tags":["experiments"]
+	},
+	"music-bubbles": {
+		"hidden": false,
+		"title": "Music Bubbles",
+		"subtitle": "Binaural Audio in Augmented Reality experiment",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/experiments/music-bubbles/thumbnail.png"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/experiments/music-bubbles/unity.png"
+			}
+		},
+		"tags":["experiments"]
+	},
+	"studentloan-be-gone": {
+		"hidden": false,
+		"title": "Student Loan be Gone",
+		"subtitle": "2019",
+		"description":"A good friend told me he was afraid to visit DUO's website, the Dutch governmental body that, among other things, issues student loans. I made him this Chrome extension that replaces the information about your student loan debt with The Communist Manifesto, so you can easily manage your study affairs without being confronted by the crippling debt you have built up.<br/><br/><b>N.B.:</b> This extension does not necessarily reflect my views on what an ideal society would be like.",
+		"cta":"<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/experiments/debt-eraser/thumbnail.png",
+			"subtitle":"Chrome extension that replaces your student loan debt with The Communist Manifesto"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/experiments/debt-eraser/screenshot.png"
+			}
+		},
+		"tags":["experiments"]
 	}
 }
