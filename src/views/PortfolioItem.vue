@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-item-overview">
     <div class="info container">
-      <router-link :to="{name:'portfolio'}" class="back-button">&larr; PORTFOLIO</router-link>
+      <a @click.prevent="handleBack('/portfolio')" class="back-button">&larr; PORTFOLIO</a>
 
       <h1 v-if="item.title" v-html="item.title"></h1>
       <h2 v-if="item.subtitle" v-html="item.subtitle"></h2>
@@ -63,6 +63,13 @@ export default {
         }
       });
     },
+    handleBack(fallback) {
+      if (!this.fromRoute.name) {
+        this.$router.push(fallback);
+      } else {
+        this.$router.back();
+      }
+    },
   },
   mounted() {
     this.getItemContent(this.$route.params.id);
@@ -83,6 +90,11 @@ export default {
         { vmid: 'description', name: 'description', content: this.item.description },
       ],
     };
+  },
+  beforeRouteEnter(to, from, next) {
+    next((vm) => {
+      vm.fromRoute = from;
+    });
   },
 };
 </script>
@@ -118,6 +130,7 @@ a{
 }
 .back-button{
   color:#000;
+  text-decoration: underline;
 }
 
 h1,h2{
@@ -162,7 +175,7 @@ p a{
 }
 
 img{
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
   display: block;
 }
@@ -189,5 +202,10 @@ video{
     background: #f2f2f2;
   }
   padding-bottom: 50px;
+}
+
+.blog img{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>
