@@ -21,7 +21,7 @@ export default new Router({
     },
     {
       path: '/portfolio',
-      redirect: '/portfolio/all',
+      redirect: '/portfolio/noteworthy',
     },
     {
       path: '/portfolio/:filter?',
@@ -38,8 +38,7 @@ export default new Router({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    // FIXME: Scrolling to top when moving back to home should be disabled
-    if (savedPosition) {
+    if (to.name == 'portfolio') {
       return savedPosition;
     }
     return { x: 0, y: 0 };
