@@ -5,11 +5,17 @@
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'all'} }">
         all
       </router-link>
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'noteworthy'} }">
+        noteworthy
+      </router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
         web
       </router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'visual'} }">
         visual
+      </router-link>
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'experiments'} }">
+        experiments
       </router-link>
     </section>
 
@@ -60,6 +66,22 @@ export default {
       portfolioItems: {},
     };
   },
+  methods: {
+    applyFilter(filterName, isStill = false) {
+      if (this.grid) {
+        if (filterName === 'all' || !filterName) {
+          this.filter = '*';
+        } else {
+          this.filter = `.${filterName}`;
+        }
+        let transitionDuration = '0.4s';
+        if (isStill) {
+          transitionDuration = 0;
+        }
+        this.grid.arrange({ filter: this.filter, transitionDuration });
+      }
+    },
+  },
   mounted() {
     // Import all portfolio items from the .json file into this components data
     axios.get(`${this.baseUrl}portfolio.json`).then((response) => {
@@ -77,8 +99,12 @@ export default {
           gutter: 30,
         },
       });
+      // If no filter is specified, show noteworthy projects. Otherwise apply requested filter
       if (this.$route.params.filter === '' || !this.$route.params.filter) {
-        this.$router.push({ name: 'portfolio', params: { filter: 'all' } });
+        this.$router.push({ name: 'portfolio', params: { filter: 'noteworthy' } });
+      } else {
+        this.applyFilter(this.$route.params.filter, true);
+        this.grid.layout();
       }
     });
   },
@@ -86,15 +112,7 @@ export default {
     /* eslint func-names: ["error", "never"] */
     // If the route changes, it means that another filter is applied.
     '$route.params.filter': function (filterName) {
-      if (this.grid) {
-        if (filterName === 'all' || !filterName) {
-          this.filter = '*';
-        } else {
-          this.filter = `.${filterName}`;
-        }
-        this.grid.arrange({ filter: this.filter });
-        this.grid.layout();
-      }
+      this.applyFilter(filterName);
     },
   },
 };
@@ -124,15 +142,16 @@ export default {
   float:left;
   display: inline-block;
   position: relative;
-  border-radius: 3px;
   margin-bottom: 30px;
   background: #323232;
+  border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
-  overflow: hidden;
   @media screen and (max-width: 800px) {
     margin-right: 0;
     width: 100%;
   }
+  overflow: hidden;
+  border-right-width: 0px;
 }
 .portfolio img {
   display: block;
@@ -156,7 +175,7 @@ export default {
   height: 100%;
   width: 100%;
   opacity: 0;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: .3s ease;
   background-color: rgba(0,0,0,0.5);
   .text{
