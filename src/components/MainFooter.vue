@@ -2,8 +2,6 @@
   <footer>
     <p>
       &copy; Dani&euml;l Korssen<br/>
-
-    </br><a href="https://github.com/dpkn/portfolio" target="_blank">Source code on GitHub</a>
     </p>
   </footer>
 </template>
