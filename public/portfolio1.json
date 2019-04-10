@@ -1,22 +1,52 @@
 {
+	"lamp": {
+		"hidden": true,
+		"title": "LÄMP",
+		"subtitle": "Light Visualisation for Google Assistant",
+		"description":"Smart lights have exisited for quite some time, but their current form factor often limits the functionality to merely lighting up a room. By putting similair hardware in a tastefully designed tube, more visual information can be displayed while seamlessly blending into the rest of the room and furniture.",
+		"cta":"<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/lamp/thumbnail.png"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/lamp/thumbnail.png",
+				"class":"fifty"
+			},
+			"2":{
+				"type":"text",
+				"title":"Test",
+				"description":"lorem ipsum",
+				"class":"fifty text"
+			}
+		},
+		"tags":["hardware"]
+	},
 	"bodies-gallery": {
 		"hidden": true,
 		"title": "The Bodies Gallery",
 		"subtitle": "",
-		"description":"The Bodies Gallery is a website that celebrates the variety of body shapes and sizes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br/><br/>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site.",
+		"description":"The Bodies Gallery is a website that celebrates the variety of body sizes and shapes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br/><br/>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site.",
 		"cta":"<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</b>",
 		"thumbnail":{
 			"type":"img",
 			"url":"portfolio/bodies-gallery/thumbnail.gif",
-			"subtitle":"A website celebrating the variety of body shapes and sizes"
+			"subtitle":"Wad"
 		},
-		"layout":"blog",
+		"layout":"grid",
 		"content":{
 			"1":{
-				"url":"portfolio/bodies-gallery/screenshot.png"
+				"url":"portfolio/bodies-gallery/screenshot.png",
+				"class":"hundred"
+			},
+			"2":{
+				"type":"text",
+				"description":"lorem ipsum",
 			}
 		},
-		"tags":["web","noteworthy"]
+		"tags":["web"]
 	},
 	"self-portrait-i": {
 		"hidden": false,
@@ -40,7 +70,7 @@
 				"class":"fifty"
 			}
 		},
-		"tags":["web","noteworthy"]
+		"tags":["web"]
 	},
 	"how-many-weeks-left": {
 		"hidden": false,
@@ -52,13 +82,14 @@
 			"type":"img",
 			"url":"portfolio/howmanyweeksleft/thumbnail.png"
 		},
-		"layout":"blog",
+		"layout":"grid",
 		"content":{
 			"1":{
-				"url":"portfolio/howmanyweeksleft/screenshot.png"
+				"url":"portfolio/howmanyweeksleft/header.gif",
+				"class":"hundred"
 			}
 		},
-		"tags":["web","noteworthy"]
+		"tags":["web"]
 	},
 	"bloclock": {
 		"hidden": false,
@@ -75,6 +106,26 @@
 		"content":{
 			"1":{
 				"url":"portfolio/bloclock/bloclock.png",
+				"class":"hundred"
+			}
+		},
+		"tags":["web"]
+	},
+	"studentloan-be-gone": {
+		"hidden": false,
+		"title": "Student Loan be Gone",
+		"subtitle": "2019",
+		"description":"A Chrome extension that replaces your student loan debt on the Dutch governments website with The Communist Manifesto.",
+		"cta":"<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/debt-eraser/thumbnail.png",
+			"subtitle":"Chrome extension that replaces your student loan debt with The Communist Manifesto"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/debt-eraser/screenshot.png",
 				"class":"hundred"
 			}
 		},
@@ -100,7 +151,7 @@
 				"url":"portfolio/virtualeye/stare.jpg"
 			}
 		},
-		"tags":["visual","noteworthy"]
+		"tags":["visual"]
 	},
 	"lesya": {
 		"hidden": false,
@@ -134,6 +185,35 @@
 		},
 		"tags":["visual"]
 	},
+	"happy": {
+		"hidden": false,
+		"title": "Happy",
+		"subtitle": "Branding a coffee shop",
+		"description":"For a coffee and tea shop called Happy, I got the oportunity to design a brand identity from scratch. This project included multiple logos, as well as posters and digital signage animations. Download the brand identity document (.pdf), or look at some of the artwork and animations below.",
+		"cta":"<a href=\"portfolio/happy/brand_identity.pdf\" target=\"_blank\">Download the brand identity document (PDF)</a>,  or look at some of the artwork and animations below.",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/happy/thumbnail.jpg"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/happy/happy_coffee_cup.jpg",
+				"class":"sixty"
+			},
+			"2":{
+				"url":"portfolio/happy/happy_poster_coco.jpg",
+				"class":"fourty"
+			},
+			"3":{
+				"url":"portfolio/happy/happy_glass.jpg"
+			},
+			"4":{
+				"url":"portfolio/happy/happy_poster_woman.jpg"
+			}
+		},
+		"tags":["visual"]
+	},
 	"kissing-cats": {
 		"hidden": false,
 		"title": "Kissing Cats",
@@ -150,59 +230,5 @@
 			}
 		},
 		"tags":["visual"]
-	},
-	"piano-game": {
-		"hidden": false,
-		"title": "Pianio",
-		"subtitle": "A platform game playable using WebMIDI keyboard input",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/experiments/piano-game/thumbnail.png"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/experiments/piano-game/gameplay.png"
-			},
-			"2":{
-				"url":"portfolio/experiments/piano-game/splashscreen.png"
-			}
-		},
-		"tags":["experiments"]
-	},
-	"music-bubbles": {
-		"hidden": false,
-		"title": "Music Bubbles",
-		"subtitle": "Binaural Audio in Augmented Reality experiment",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/experiments/music-bubbles/thumbnail.png"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/experiments/music-bubbles/unity.png"
-			}
-		},
-		"tags":["experiments"]
-	},
-	"studentloan-be-gone": {
-		"hidden": false,
-		"title": "Student Loan be Gone",
-		"subtitle": "2019",
-		"description":"A good friend told me he was afraid to visit DUO's website, the Dutch governmental body that, among other things, issues student loans. I made him this Chrome extension that replaces the information about your student loan debt with The Communist Manifesto, so you can easily manage your study affairs without being confronted by the crippling debt you have built up.<br/><br/><b>N.B.:</b> This extension does not necessarily reflect my views on what an ideal society would be like.",
-		"cta":"<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/experiments/debt-eraser/thumbnail.png",
-			"subtitle":"Chrome extension that replaces your student loan debt with The Communist Manifesto"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/experiments/debt-eraser/screenshot.png"
-			}
-		},
-		"tags":["experiments"]
 	}
 }
