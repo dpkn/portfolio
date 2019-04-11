@@ -5,6 +5,7 @@
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'all'} }">
         all
       </router-link>
+      <span>|</span>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'noteworthy'} }">
         noteworthy
       </router-link>
