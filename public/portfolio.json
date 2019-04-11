@@ -1,113 +1,10 @@
 {
-	"bodies-gallery": {
-		"hidden": true,
-		"title": "The Bodies Gallery",
-		"subtitle": "",
-		"description":"The Bodies Gallery is a website that celebrates the variety of body shapes and sizes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br/><br/>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site.",
-		"cta":"<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</b>",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/bodies-gallery/thumbnail.gif",
-			"subtitle":"A website celebrating the variety of body shapes and sizes"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/bodies-gallery/screenshot.png"
-			}
-		},
-		"tags":["web","noteworthy"]
-	},
-	"self-portrait-i": {
-		"hidden": false,
-		"title": "Daniël 2",
-		"subtitle": "A not-so-smart AI self-portrait",
-		"description":"Daniël 2 is a chatbot that uses a machine learning model to generate text messages as if it were me. Its neural network is trained on the 59353 WhatsApp messages I sent over the past five years. The data on which this model is trained encompasses everything I've shared with my closest friends, from my darkest secrets to my deepest crushes. The results are hilariously terrible.",
-		"cta":"<a href=\"https://github.com/dpkn/self-portrait\" target=\"_blank\">See the code and documentation on GitHub</a>",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/self-portrait/desktop_photo.jpg"
-		},
-		"layout":"grid",
-		"content":{
-			"1":{
-				"url":"portfolio/self-portrait/desktop_photo_mid.jpg",
-				"class":"fifty"
-			},
-			"2":{
-				"type":"video",
-				"url":"portfolio/self-portrait/thumbnail.mp4",
-				"class":"fifty"
-			}
-		},
-		"tags":["web","noteworthy"]
-	},
-	"how-many-weeks-left": {
-		"hidden": false,
-		"title": "How many weeks left?",
-		"subtitle": "Fuel your midlife crisis with statistics",
-		"description":"This website calculates your life expectancy based on your birthdate and demographic, showing you how much time of your life you already wasted and, more importantly, how many weeks are left until you (statistically) die. The calculation is based on data by <a href=\"https://data.worldbank.org/indicator/SP.DYN.LE00.IN\" target=\"_blank\">The World Bank Group</a>. Use with caution; feelings of self-loath, remorse, and anxiety may occur.",
-		"cta":"<a href=\"http://howmanyweeksleft.com\" target=\"_blank\">Visit howmanyweeksleft.com</a> | <a href=\"https://github.com/dpkn/howmanyweeksleft\" target=\"_blank\">See the code on GitHub</a>",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/howmanyweeksleft/thumbnail.png"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/howmanyweeksleft/screenshot.png"
-			}
-		},
-		"tags":["web","noteworthy"]
-	},
-	"bloclock": {
-		"hidden": false,
-		"title": "Bloclock",
-		"subtitle": "A more sensible approach to time",
-		"description":"Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. When you go to bed, all of your blocks will be gone. This way of time framing makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
-		"cta":"<a href=\"http://bloclock.com\" target=\"_blank\">Visit bloclock.com</a>",
-		"thumbnail":{
-			"subtitle": "A clock showing you the time you've left before you go to bed",
-			"type":"img",
-			"url":"portfolio/bloclock/thumbnail.jpg"
-		},
-		"layout":"grid",
-		"content":{
-			"1":{
-				"url":"portfolio/bloclock/bloclock.png",
-				"class":"hundred"
-			}
-		},
-		"tags":["web"]
-	},
-	"virtualeye": {
-		"hidden": false,
-		"title": "VirtualEye",
-		"subtitle":"Affordable intimacy for the massess",
-		"description":"In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
-		"cta":"<b>Model:</b> Amber Verrips",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/virtualeye/thumbnail.jpg",
-			"subtitle": "A dystopian concept about the commodification of love"
-		},
-		"layout":"grid",
-		"content":{
-			"1":{
-				"url":"portfolio/virtualeye/lonely.jpg"
-			},
-			"2":{
-				"url":"portfolio/virtualeye/stare.jpg"
-			}
-		},
-		"tags":["visual","noteworthy"]
-	},
 	"lesya": {
 		"hidden": false,
 		"title": "Lesya",
-		"subtitle": "Photography experiments",
+		"subtitle": "2018",
 		"thumbnail":{
-			"subtitle": "A serie of light photography experiments",
+			"subtitle": "A light photography series",
 			"type":"img",
 			"url":"portfolio/lesya/thumbnail.jpg"
 		},
@@ -134,13 +31,51 @@
 		},
 		"tags":["visual"]
 	},
+	"music-bubbles": {
+		"hidden": false,
+		"title": "Music Bubbles",
+		"description":"This is an experiment to create a binaural audio experience in augmented reality. Each bubble emits part of the same song. By walking around, the song can be experienced in different ways.<br/><br/>Work in progress / more info soon.",
+		"cta":"<b>Song:</b> 'Kort' by AudioBlade'",
+		"thumbnail":{
+			"subtitle": "Binaural Audio in Augmented Reality experiment",
+			"type":"img",
+			"url":"portfolio/experiments/music-bubbles/thumbnail.png"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/experiments/music-bubbles/grid.png"
+			}
+		},
+		"tags":["experiments"]
+	},
+	"bodies-gallery": {
+		"hidden": true,
+		"title": "The Bodies Gallery",
+		"subtitle": "",
+		"description":"The Bodies Gallery is a website that celebrates the variety of body shapes and sizes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br/><br/>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site.",
+		"cta":"<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</b>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/bodies-gallery/thumbnail.gif",
+			"subtitle":"A website celebrating the variety of body shapes and sizes"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/bodies-gallery/screenshot.png"
+			}
+		},
+		"tags":["web","noteworthy"]
+	},
 	"kissing-cats": {
 		"hidden": false,
 		"title": "Kissing Cats",
 		"subtitle": "2018",
 		"thumbnail":{
 			"type":"img",
-			"url":"portfolio/kissing-cats/thumbnail.jpg"
+			"url":"portfolio/kissing-cats/thumbnail.jpg",
+			"subtitle":"3D Model"
 		},
 		"layout":"grid",
 		"content":{
@@ -151,37 +86,109 @@
 		},
 		"tags":["visual"]
 	},
+	"virtualeye": {
+		"hidden": false,
+		"title": "VirtualEye",
+		"subtitle":"Affordable intimacy for the massess",
+		"description":"In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
+		"cta":"<b>Model:</b> Amber Verrips",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/virtualeye/thumbnail.jpg",
+			"subtitle": "A dystopian concept about the commodification of love"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/virtualeye/lonely.jpg"
+			},
+			"2":{
+				"url":"portfolio/virtualeye/stare.jpg"
+			}
+		},
+		"tags":["visual","noteworthy"]
+	},
+	"self-portrait-i": {
+		"hidden": false,
+		"title": "Daniël 2",
+		"subtitle": "A not-so-smart AI self-portrait",
+		"description":"Daniël 2 is a chatbot that uses a machine learning model to generate text messages as if it were me. Its neural network is trained on the 59353 WhatsApp messages I sent over the past five years. The data on which this model is trained encompasses everything I've shared with my closest friends, from my darkest secrets to my deepest crushes. The results are hilariously terrible.",
+		"cta":"<a href=\"https://github.com/dpkn/self-portrait\" target=\"_blank\">See the code and documentation on GitHub</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/self-portrait/desktop_photo.jpg"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/self-portrait/desktop_photo_mid.jpg",
+				"class":"fifty"
+			},
+			"2":{
+				"type":"video",
+				"url":"portfolio/self-portrait/thumbnail.mp4",
+				"class":"fifty"
+			}
+		},
+		"tags":["web","noteworthy"]
+	},
+	"bloclock": {
+		"hidden": false,
+		"title": "Bloclock",
+		"subtitle": "A more sensible approach to time",
+		"description":"Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. When you go to bed, all of your blocks will be gone. This way of time framing makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
+		"cta":"<a href=\"http://bloclock.com\" target=\"_blank\">Visit bloclock.com</a>",
+		"thumbnail":{
+			"subtitle": "A clock showing you the time you've left before you go to bed",
+			"type":"img",
+			"url":"portfolio/bloclock/thumbnail.jpg"
+		},
+		"layout":"grid",
+		"content":{
+			"1":{
+				"url":"portfolio/bloclock/bloclock.png",
+				"class":"hundred"
+			}
+		},
+		"tags":["web"]
+	},
+	"how-many-weeks-left": {
+		"hidden": false,
+		"title": "How many weeks left?",
+		"subtitle": "Fuel your midlife crisis with statistics",
+		"description":"This website calculates your life expectancy based on your birthdate and demographic, showing you how much time of your life you already wasted and, more importantly, how many weeks are left until you (statistically) die. The calculation is based on data by <a href=\"https://data.worldbank.org/indicator/SP.DYN.LE00.IN\" target=\"_blank\">The World Bank Group</a>. Use with caution; feelings of self-loath, remorse, and anxiety may occur.",
+		"cta":"<a href=\"http://howmanyweeksleft.com\" target=\"_blank\">Visit howmanyweeksleft.com</a> | <a href=\"https://github.com/dpkn/howmanyweeksleft\" target=\"_blank\">See the code on GitHub</a>",
+		"thumbnail":{
+			"type":"img",
+			"url":"portfolio/howmanyweeksleft/thumbnail.png"
+		},
+		"layout":"blog",
+		"content":{
+			"1":{
+				"url":"portfolio/howmanyweeksleft/screenshot.png"
+			}
+		},
+		"tags":["web","noteworthy"]
+	},
 	"piano-game": {
 		"hidden": false,
 		"title": "Pianio",
-		"subtitle": "A platform game playable using WebMIDI keyboard input",
+		"description":"Pianio is an experimental game that is controlled by playing the right note on the right time using a MIDI USB-keyboard.",
 		"thumbnail":{
+			"subtitle": "A game playable using Web MIDI keyboard input",
 			"type":"img",
 			"url":"portfolio/experiments/piano-game/thumbnail.png"
 		},
 		"layout":"blog",
 		"content":{
 			"1":{
-				"url":"portfolio/experiments/piano-game/gameplay.png"
+				"url":"portfolio/experiments/piano-game/visual.png"
 			},
 			"2":{
 				"url":"portfolio/experiments/piano-game/splashscreen.png"
-			}
-		},
-		"tags":["experiments"]
-	},
-	"music-bubbles": {
-		"hidden": false,
-		"title": "Music Bubbles",
-		"subtitle": "Binaural Audio in Augmented Reality experiment",
-		"thumbnail":{
-			"type":"img",
-			"url":"portfolio/experiments/music-bubbles/thumbnail.png"
-		},
-		"layout":"blog",
-		"content":{
-			"1":{
-				"url":"portfolio/experiments/music-bubbles/unity.png"
+			},
+			"3":{
+				"url":"portfolio/experiments/piano-game/gameplay.png"
 			}
 		},
 		"tags":["experiments"]
