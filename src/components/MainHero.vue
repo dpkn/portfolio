@@ -32,9 +32,10 @@ export default {
   max-width: 700px;
 }
 h1{
-  font-size: 1.7em;
-  font-weight: 500;
-  font-family: 'Esteban', serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: 'Merriweather', serif;
   & span{
     color:#F39237;
   }

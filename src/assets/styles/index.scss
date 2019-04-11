@@ -1,4 +1,3 @@
-@import url('inter-ui.css');
 
 *{
   box-sizing: border-box;
@@ -8,18 +7,20 @@ html,body,#app{
   height: 100%;
   margin: 0;
   padding: 0;
-//  font-family: 'Inter UI', sans-serif;
-font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif;
+  //cursor: url("../pointer.cur"), default;
 }
+
 p{
   font-family: 'Merriweather', serif;
   font-weight: 300;
-font-size: 1em;
-font-style: normal;
-line-height: 25px;
+  font-size: 1em;
+  font-style: normal;
+  line-height: 25px;
 }
+
 b{
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .container{
@@ -39,6 +40,8 @@ a{
   &:hover{
     color:#6f6f6f;
   }
+//  cursor: url("../click.cur"), pointer;
+  cursor:pointer;
 }
 
 // Buttons
@@ -46,6 +49,10 @@ a{
   max-width: 500px;
   margin: 0 auto;
   padding: 30px 0;
+  span{
+    color:#afafaf;
+    margin: 0 5px;
+  }
 }
 
 .button,button{
@@ -53,7 +60,7 @@ a{
   padding: 10px 15px;
   margin: 5px;
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
   font-weight: 500;
   background: #fff;
@@ -68,6 +75,7 @@ a{
   &:focus{
     outline:none;
   }
+  cursor:pointer;
 }
 
 /* Helper classes */
