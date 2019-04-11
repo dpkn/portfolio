@@ -121,13 +121,6 @@ export default {
   margin-bottom: 50px;
 }
 
-a{
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif!important;
-}
-.cta a{
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, sans-serif!important;
-}
 .back-button{
   color:#000;
   text-decoration: underline;
