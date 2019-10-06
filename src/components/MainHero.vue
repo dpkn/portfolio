@@ -3,15 +3,17 @@
     <img class="headshot pull-right" src="/headshot.jpg" alt="Headshot" />
     <div class="pull-left">
       <h1>
-        I'm a <span>creative developer</span>
-        working and experimenting at the intersection of art and technology, with a focus on web technologies.
-        I'm currently studying <span>Interaction Design</span> at <a href="https://www.hku.nl/en.htm" target="_blank">HKU</a>.
+        Hi! I'm a freelance <span>creative developer</span>
+        building peculiar interactive digital artefacts, focussing on experimental web technologies.
       </h1>
       <p>
+        Find me on
         <a href="https://github.com/dpkn" target="_blank">GitHub</a>,
         <a href="https://twitter.com/danielkorssen" target="_blank">Twitter</a>,
+        <a href="https://instagram.com/danielkorssen" target="_blank">Instagram</a>,
         <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
-        <a href="#" onclick="this.href=atob('bWFpbHRvOmRhYW5rb3Jzc2VuJTQwZ21haWwuY29t'); return true">email</a>
+        or send me an
+        <a href="#" onclick="this.href=atob('bWFpbHRvOmRhYW5rb3Jzc2VuJTQwZ21haWwuY29t'); return true">email</a>.
       </p>
     </div>
   </section>
@@ -37,8 +39,23 @@ h1{
   line-height: 1.5em;
   font-family: 'Merriweather', serif;
   & span{
-    color:#F39237;
+    color:orange;
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    background-clip:text;
+    text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
   }
+}
+
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
 }
 
 .headshot{
