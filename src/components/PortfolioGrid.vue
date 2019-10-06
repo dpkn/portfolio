@@ -1,60 +1,72 @@
 <template>
   <section class="portfolio">
-
     <section class="button-group">
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'all'} }">
         all
       </router-link>
       <span>|</span>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter: 'noteworthy'} }">
-        noteworthy
-      </router-link>
+      <router-link
+        tag="button"
+        :to="{ name: 'portfolio', params: { filter: 'noteworthy'} }"
+      >noteworthy</router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
         web
       </router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'visual'} }">
         visual
       </router-link>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'experiments'} }">
+      <router-link
+        tag="button"
+        :to="{ name: 'portfolio', params: { filter:'experiments'} }">
         experiments
       </router-link>
     </section>
-
-    <section id="portfolio-grid" class="portfolio-grid container">
-      <div v-for="(item,key) in portfolioItems" v-bind:key="key" class="portfolio-item"
-        :class="item.tags">
+    <transition name="fade" mode="out-in">
+      <section id="portfolio-grid" class="portfolio-grid container" v-show="imagesLoaded">
+        <div
+          v-for="(item,key) in portfolioItems"
+          v-bind:key="key"
+          class="portfolio-item"
+          :class="item.tags"
+        >
           <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
-            <img v-if="item.thumbnail.type=='img'" :src="baseUrl + item.thumbnail.url"
-            :alt="item.title" />
-            <video  v-if="item.thumbnail.type=='video'"
-                    autoplay loop muted playsinline class="video-js"
-                    data-setup='{"preload": "auto","fluid":true}'>
-              <source
-                  :src="baseUrl + item.thumbnail.url"
-                type="video/mp4">
+            <img
+              v-if="item.thumbnail.type=='img'"
+              :src="baseUrl + item.thumbnail.url"
+              :alt="item.title"
+            />
+
+            <video
+              v-if="item.thumbnail.type=='video'"
+              :poster="baseUrl + item.thumbnail.poster"
+              autoplay
+              loop
+              muted
+              playsinline
+            >
+              <source :src="baseUrl + item.thumbnail.url" type="video/mp4" />
             </video>
+
             <div class="overlay">
               <div class="text">
                 <h1>{{ item.title }}</h1>
                 <p>
                   {{
-                    (item.thumbnail.subtitle === undefined) ?
-                     item.subtitle : item.thumbnail.subtitle
+                  (item.thumbnail.subtitle === undefined) ?
+                  item.subtitle : item.thumbnail.subtitle
                   }}
                 </p>
               </div>
             </div>
           </router-link>
-      </div>
-    </section>
+        </div>
+      </section>
+    </transition>
   </section>
 </template>
 
 <script>
 // Import plugins
-import 'video.js/dist/video-js.css';
-import 'video.js';
-
 import imagesLoaded from 'imagesloaded';
 import Isotope from 'isotope-layout';
 import axios from 'axios';
@@ -65,6 +77,7 @@ export default {
     return {
       baseUrl: process.env.BASE_URL,
       portfolioItems: {},
+      imagesLoaded: false,
     };
   },
   methods: {
@@ -93,6 +106,7 @@ export default {
     // When Vue has finished rendering the portfolio items,
     // wait for the images to load, then activate Isotope.
     imagesLoaded('#portfolio-grid', () => {
+      this.imagesLoaded = true;
       this.grid = new Isotope('#portfolio-grid', {
         itemSelector: '.portfolio-item',
         layoutMode: 'masonry',
@@ -100,9 +114,13 @@ export default {
           gutter: 30,
         },
       });
+
       // If no filter is specified, show noteworthy projects. Otherwise apply requested filter
       if (this.$route.params.filter === '' || !this.$route.params.filter) {
-        this.$router.push({ name: 'portfolio', params: { filter: 'noteworthy' } });
+        this.$router.push({
+          name: 'portfolio',
+          params: { filter: 'noteworthy' },
+        });
       } else {
         this.applyFilter(this.$route.params.filter, true);
         this.grid.layout();
@@ -120,14 +138,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-.portfolio{
-  background: #FAFAFA;
+.portfolio {
+  background: #fafafa;
   text-align: center;
   @include clearfix;
   min-height: 600px;
 }
-.portfolio-grid{
+.portfolio-grid {
   text-align: center;
   &:after {
     content: "";
@@ -135,18 +152,16 @@ export default {
     clear: both;
   }
   @include clearfix;
-
 }
-.portfolio-item{
+.portfolio-item {
   width: 50%;
-  width: -webkit-calc(50% - 15px);
-  float:left;
-  display: inline-block;
+  width: calc(50% - 15px);
+  float: left;
   position: relative;
   margin-bottom: 30px;
   background: #323232;
   border-radius: 10px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
   @media screen and (max-width: 800px) {
     margin-right: 0;
     width: 100%;
@@ -158,15 +173,12 @@ export default {
   display: block;
   width: 100%;
 }
-.portfolio video {
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
+
+video{
+  width:100%;
+  height:auto;
+  margin-bottom:-10px;
 }
-.vjs-tech { object-fit: cover; }
 .overlay {
   position: absolute;
   top: 0;
@@ -177,9 +189,9 @@ export default {
   width: 100%;
   opacity: 0;
   border-radius: 10px;
-  transition: .3s ease;
-  background-color: rgba(0,0,0,0.5);
-  .text{
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  .text {
     background: #fff;
     padding: 20px 0;
     bottom: -100px;
@@ -187,23 +199,24 @@ export default {
     width: 100%;
     text-align: center;
     transition: bottom 0.3s;
-    color:#000;
-    h1{
+    color: #000;
+    h1 {
       font-size: 2em;
       font-weight: 700;
     }
-    p{
+    p {
       padding: 0 50px;
     }
   }
-  a,a:visited{
-    color:#000;
+  a,
+  a:visited {
+    color: #000;
   }
 }
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
 .portfolio-item:hover .overlay .text {
-  bottom:0;
+  bottom: 0;
 }
 </style>
