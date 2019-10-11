@@ -42,10 +42,7 @@ export default new Router({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    if (to.name === 'portfolio') {
-      return savedPosition;
-    }
-    return { x: 0, y: 0 };
+    return savedPosition;
   },
   linkActiveClass: 'active',
 });
