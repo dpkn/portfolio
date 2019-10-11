@@ -13,7 +13,9 @@
         <a href="https://instagram.com/danielkorssen" target="_blank">Instagram</a>,
         <a href="http://linkedin.com/in/danielkorssen/" target="_blank">LinkedIn</a>,
         or send me an
-        <a href="#" onclick="this.href=atob('bWFpbHRvOmRhYW5rb3Jzc2VuJTQwZ21haWwuY29t'); return true">email</a>.
+        <a href="#"
+          onclick="this.href=atob('bWFpbHRvOmRhYW5rb3Jzc2VuJTQwZ21haWwuY29t'); return true">
+          email</a>.
       </p>
     </div>
   </section>
