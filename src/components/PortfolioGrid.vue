@@ -109,6 +109,17 @@ export default {
       this.portfolioItems = response.data;
     });
   },
+  activated() {
+    // Because of keep-alive, videos stop playing when out of view.
+    // This starts them again after the page is visible
+    const videos = document.getElementsByTagName('video');
+    // eslint-disable-next-line no-restricted-syntax
+    for (const video of videos) {
+      if (video.paused) {
+        video.play();
+      }
+    }
+  },
   updated() {
     // When Vue has finished rendering the portfolio items,
     // wait for the images to load, then activate Isotope.
