@@ -46,7 +46,6 @@
             loop
             muted
             playsinline
-            class="video-js"
           >
             <source
               :src="baseUrl + contents.url"
