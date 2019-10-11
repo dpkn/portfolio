@@ -21,8 +21,8 @@
         experiments
       </router-link>
     </section>
-    <transition name="fade" mode="out-in">
-      <section id="portfolio-grid" class="portfolio-grid container" v-show="imagesLoaded">
+    <transition-group name="fade" mode="out-in">
+      <section id="portfolio-grid" class="portfolio-grid container" v-show="imagesLoaded" key="portfolio-grid">
         <div
           v-for="(item,key) in portfolioItems"
           v-bind:key="key"
@@ -61,7 +61,8 @@
           </router-link>
         </div>
       </section>
-    </transition>
+      <LoadingSpinner v-show="!imagesLoaded" key="loading-portfolio"></LoadingSpinner>
+    </transition-group>
   </section>
 </template>
 
@@ -71,8 +72,14 @@ import imagesLoaded from 'imagesloaded';
 import Isotope from 'isotope-layout';
 import axios from 'axios';
 
+// Import components
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
+
 export default {
   name: 'PortfolioGrid',
+  components: {
+    LoadingSpinner,
+  },
   data() {
     return {
       baseUrl: process.env.BASE_URL,
@@ -129,9 +136,12 @@ export default {
   },
   watch: {
     /* eslint func-names: ["error", "never"] */
-    // If the route changes, it means that another filter is applied.
+    // If the route changes, it means that another filter is applied
+    // or the page switched. Only apply new filter on actual filter change
     '$route.params.filter': function (filterName) {
-      this.applyFilter(filterName);
+      if (filterName !== this.filterName) {
+        this.applyFilter(filterName);
+      }
     },
   },
 };

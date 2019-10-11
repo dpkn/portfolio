@@ -24,7 +24,7 @@
         v-html="item.cta"
       ></p>
     </div>
-    <transition
+    <transition-group
       name="fade"
       mode="out-in"
     >
@@ -32,6 +32,7 @@
         id="portfolio-content"
         :class="item.layout"
         v-show="imagesLoaded"
+        key="portfolio-content"
       >
         <div
           v-for="(contents,key) in item.content"
@@ -58,12 +59,13 @@
             class="embed-container"
           >
             <iframe
-              :src="contents.url"
+              :src="contents.url +'?autoplay=1&loop=1&title=0&byline=0&portrait=0'"
               type="video/mp4"
               width="100%"
               frameborder="0"
               allow="autoplay; fullscreen"
               allowfullscreen
+
             ></iframe>
           </div>
 
@@ -78,7 +80,8 @@
           />
         </div>
       </div>
-    </transition>
+      <LoadingSpinner v-show="!imagesLoaded" key="loading-item"></LoadingSpinner>
+    </transition-group>
   </div>
 </template>
 
@@ -87,8 +90,14 @@
 import imagesLoaded from 'imagesloaded';
 import axios from 'axios';
 
+// Import components
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
+
 export default {
   name: 'PortfolioItem',
+  components: {
+    LoadingSpinner,
+  },
   data() {
     return {
       baseUrl: process.env.BASE_URL,
