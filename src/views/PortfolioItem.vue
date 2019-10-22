@@ -58,7 +58,7 @@
             class="embed-container"
           >
             <iframe
-              :src="contents.url +'?autoplay=1&loop=1&title=0&byline=0&portrait=0'"
+              :src="contents.url +'&loop=1&title=0&byline=0&portrait=0'"
               type="video/mp4"
               width="100%"
               frameborder="0"
