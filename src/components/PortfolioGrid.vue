@@ -5,10 +5,6 @@
         all
       </router-link>
       <span>|</span>
-      <router-link
-        tag="button"
-        :to="{ name: 'portfolio', params: { filter: 'noteworthy'} }"
-      >noteworthy</router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
         web
       </router-link>
@@ -137,7 +133,7 @@ export default {
       if (this.$route.params.filter === '' || !this.$route.params.filter) {
         this.$router.push({
           name: 'portfolio',
-          params: { filter: 'noteworthy' },
+          params: { filter: 'all' },
         });
       } else {
         this.applyFilter(this.$route.params.filter, true);

@@ -21,7 +21,7 @@ export default new Router({
     },
     {
       path: '/portfolio',
-      redirect: '/portfolio/noteworthy',
+      redirect: '/portfolio/all',
     },
     {
       path: '/portfolio/:filter?',
@@ -38,7 +38,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: 'portfolio/noteworthy',
+      redirect: 'portfolio/all',
     },
   ],
   scrollBehavior(to, from, savedPosition) {
