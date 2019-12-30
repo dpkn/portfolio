@@ -1,6 +1,5 @@
 <template>
   <div class="loader">
-     Loading...
   </div>
 </template>
 
@@ -22,7 +21,6 @@ export default {
   margin: 60px auto;
   font-size: 10px;
   position: relative;
-  text-indent: -9999em;
   border-top: 0.5em solid #f2f2f2;
   border-right: 0.5em solid #f2f2f2;
   border-bottom: 0.5em solid#f2f2f2;
