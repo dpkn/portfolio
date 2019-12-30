@@ -24,7 +24,7 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-airbnb": "^3.0.1",
     "file-loader": "^3.0.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.0",
     "sass-loader": "^7.0.1",
     "style-resources-loader": "^1.2.1",
     "vue-cli-plugin-style-resources-loader": "^0.1.3",
