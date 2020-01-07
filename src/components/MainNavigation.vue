@@ -1,6 +1,6 @@
 <template>
   <header class="container">
-      <h1 class="pull-left">Daniël Korssen</h1>
+      <h1 class="pull-left">Dani&euml;l Korssen</h1>
   </header>
 </template>
 
