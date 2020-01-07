@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-item-overview">
+  <div class="portfolio-item-overview" :style="{ backgroundColor: item.background, color: item.color}">
     <div class="info container">
       <a
         @click.prevent="handleBack('/portfolio')"
@@ -13,6 +13,7 @@
       <h2
         v-if="item.subtitle"
         v-html="item.subtitle"
+        :style="{ color: item.color}"
       ></h2>
       <p
         v-if="item.description"
@@ -39,6 +40,7 @@
           :key="key"
           class="item"
           :class="contents.class"
+          :style="contents.style"
         >
           <video
             v-if="contents.type=='video'"
@@ -179,7 +181,6 @@ export default {
 }
 
 .back-button {
-  color: #000;
   text-decoration: underline;
 }
 
@@ -189,7 +190,8 @@ h2 {
 }
 h2 {
   font-weight: 500;
-  color: #5e5c5c;
+  font-size: 1.4em;
+  opacity: 0.5;
 }
 
 p a {
@@ -272,8 +274,8 @@ video {
   padding-bottom: 50px;
 }
 
-.blog img {
+.blog div, .blog img {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 </style>
