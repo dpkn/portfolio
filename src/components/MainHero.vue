@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .hero{
-  padding:40px 0 80px 0;
+  padding:20px 0 80px 0;
   @include clearfix;
 }
 .pull-left{
@@ -66,7 +66,7 @@ h1{
   border-radius: 50%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition:1s;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 }

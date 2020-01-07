@@ -24,26 +24,25 @@ b{
 }
 
 .container{
-  max-width: 1000px;
+  max-width: 1200px;
   margin:0 auto;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     margin: 0 50px;
   }
 }
 
 a{
-  color:#000;
-  transition:color .5s;
+  color:inherit;
+  transition:opacity .5s;
   &:visited{
-    color:#000;
-  }
-  &:hover{
-    color:#6f6f6f;
+    color:inherit;
   }
 //  cursor: url("../click.cur"), pointer;
   cursor:pointer;
 }
-
+p a:hover{
+  opacity: .5;
+}
 // Buttons
 .button-group{
   max-width: 500px;
