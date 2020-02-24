@@ -117,7 +117,7 @@ export default {
           this.item = response.data[id];
         } else {
           // If the provided id doesn't match with a portfolio entry, route back to home
-          // FIXME: ????? Route back on undefined project
+          this.handleBack('/portfolio');
         }
       });
     },
@@ -182,6 +182,8 @@ export default {
 
 .back-button {
   text-decoration: underline;
+  margin-bottom: 20px;
+  display: block;
 }
 
 h1,
@@ -276,6 +278,7 @@ video {
 
 .blog div, .blog img {
   max-width: 1200px;
-  margin: 30px auto;
+  margin:auto;
+  margin-bottom:30px;
 }
 </style>

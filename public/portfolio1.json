@@ -1,4 +1,5 @@
-"webvr-music": {
+{
+	"webvr-music": {
 	"hidden": false,
 	"title": "WebVR Music",
 	"subtitle": "2019",
@@ -16,4 +17,24 @@
 		}
 	},
 	"tags": ["experiments"]
+},
+"hivetech": {
+	"hidden": false,
+	"title": "HiveTech",
+	"subtitle": "2019",
+	"description": "A good friend told me he was afraid to visit DUO's website, the Dutch governmental body that, among other things, issues student loans. I made him this Chrome extension that replaces the information about your student loan debt with The Communist Manifesto, so you can easily manage your study affairs without being confronted by the crippling debt you have built up.<br/><br/><b>N.B.:</b> This extension does not necessarily reflect my views on what an ideal society would be like.",
+	"cta": "<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
+	"thumbnail": {
+		"type": "img",
+		"url": "portfolio/experiments/debt-eraser/thumbnail.png",
+		"subtitle": "An audio-only VR experience"
+	},
+	"layout": "blog",
+	"content": {
+		"1": {
+			"url": "portfolio/experiments/debt-eraser/screenshot.png"
+		}
+	},
+	"tags": ["experiments"]
+}
 }

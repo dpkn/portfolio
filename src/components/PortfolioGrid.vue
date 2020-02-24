@@ -191,8 +191,7 @@ export default {
       width: calc(50% - 15px);
   }
   @media screen and (min-width: 1200px) {
-    width: 33%;
-    width: calc(33% - 30px);
+    width: calc(33% - 20px);
   }
   overflow: hidden;
   border-right-width: 0px;

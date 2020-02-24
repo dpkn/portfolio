@@ -1,377 +1,469 @@
 {
-    "empress": {
-        "hidden": false,
-        "title": "Empress",
-        "subtitle": "Impressionism + Expressionism = Empressionism (2019)",
-        "description": "Make digital art with your emotions! Empress is a drawing tool that changes its behaviour based on your facial expressions and screams. It utilizes machine learning in the browser to detect the users facial expressions using the webcam. It is built using face-api.js and paper.js.",
-        "cta": "<a href=\"https://danielkorssen.com/empress\" target=\"_blank\">Open Empress</a> | <a href=\"https://github.com/dpkn/empress\" target=\"_blank\">See the code on GitHub</a><br> ",
-        "thumbnail": {
-            "type": "video",
-            "url": "portfolio/empress/thumbnail.mp4",
-            "poster":"portfolio/empress/thumbnail.png",
-            "subtitle": "A drawing tool that changes its behaviour based on your facial expressions and screams "
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "type": "vimeo",
-                "url": "https://player.vimeo.com/video/361351889?autoplay=0",
-                "class": "container"
-            }
-        },
-        "tags": ["web", "noteworthy", "video-cover"]
+  "empress": {
+    "hidden": false,
+    "title": "Empress",
+    "subtitle": "Impressionism + Expressionism = Empressionism (2019)",
+    "description": "Make digital art with your emotions! Empress is a drawing tool that changes its behaviour based on your facial expressions and screams. It utilizes machine learning in the browser to detect the users facial expressions using the webcam. It is built using face-api.js and paper.js.",
+    "cta": "<a href=\"https://danielkorssen.com/empress\" target=\"_blank\">Open Empress</a> | <a href=\"https://github.com/dpkn/empress\" target=\"_blank\">See the code on GitHub</a><br> ",
+    "thumbnail": {
+      "type": "video",
+      "url": "portfolio/empress/thumbnail.mp4",
+      "poster": "portfolio/empress/thumbnail.png",
+      "subtitle": "A drawing tool that changes its behaviour based on your facial expressions and screams "
     },
-    "how-many-weeks-left": {
-        "hidden": false,
-        "title": "How many weeks left?",
-        "subtitle": "Fuel your midlife crisis with statistics (2018)",
-        "description": "This website calculates your life expectancy based on your birthdate and demographic, showing you how much weeks of your life you've already wasted and, more importantly, how many weeks are left until you (statistically) die. The calculation is based on data by <a href=\"https://data.worldbank.org/indicator/SP.DYN.LE00.IN\" target=\"_blank\">The World Bank Group</a>. Use with caution; feelings of self-loath, remorse, and anxiety may occur.",
-        "cta": "<a href=\"http://howmanyweeksleft.com\" target=\"_blank\">Visit howmanyweeksleft.com</a> | <a href=\"https://github.com/dpkn/howmanyweeksleft\" target=\"_blank\">See the code on GitHub</a>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/howmanyweeksleft/thumbnail.png",
-            "subtitle":"A website visualizing the time you have left before you die"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/howmanyweeksleft/screenshot.png"
-            }
-        },
-        "tags": ["web", "noteworthy"]
+    "layout": "blog",
+    "content": {
+      "1": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/361351889?autoplay=0",
+        "class": "container"
+      }
     },
-    "connectforcoffee": {
-        "hidden": false,
-        "background":"#F3DBC5",
-        "color":"#6F272A",
-        "title": "#ConnectForCoffee",
-        "subtitle":"2019",
-        "description": "#ConnectForCoffee is a Wi-Fi network designed for public waiting areas like airports and railway stations, aimed at making two stranger meet each other through safe and playful interaction. When someone connects to the network, instead of granting them access to the Internet, a captive portal opens where they are connected to another player. In this project I was responsible for the front-end development of the prototype in Vue, as well as some work on the Node.js back-end for the WebSocket communication. The network and server are running on a Raspberry PI.",
-        "cta": "<b>Playtests and Visuals:</b> Leon van Oldenburgh &amp; Kai Calis<br/><b>Experience Design:</b> <a href=\"http://luuksiewers.nl\" target=\"_blank\">Luuk Siewers</a> &amp; <a href=\"https://amarravi.com\" target=\"_blank\">Amar Ravi</a></br><b>Back-End Development and Hardware:</b>  <a href=\"https://github.com/Creator13\" target=\"_blank\">Casper van Battum</a> </br>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/connectforcoffee/thumbnail.png",
-            "subtitle": "A WiFi network that connects people to each other instead of to the Internet"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/connectforcoffee/poster.svg",
-                "style":"max-width: 800px;margin-bottom: 50px;"
-            },
-            "2": {
-                "type": "vimeo",
-                "url": "https://player.vimeo.com/video/382012948?autoplay=1",
-                "class": "container"
-            }
-        },
-        "tags": ["web", "noteworthy", "video-cover"]
+    "tags": [
+      "web",
+      "noteworthy",
+      "video-cover"
+    ]
+  },
+  "how-many-weeks-left": {
+    "hidden": false,
+    "title": "How many weeks left?",
+    "subtitle": "Fuel your midlife crisis with statistics (2018)",
+    "description": "This website calculates your life expectancy based on your birthdate and demographic, showing you how much weeks of your life you've already wasted and, more importantly, how many weeks are left until you (statistically) die. The calculation is based on data by <a href=\"https://data.worldbank.org/indicator/SP.DYN.LE00.IN\" target=\"_blank\">The World Bank Group</a>. Use with caution; feelings of self-loath, remorse, and anxiety may occur.",
+    "cta": "<a href=\"http://howmanyweeksleft.com\" target=\"_blank\">Visit howmanyweeksleft.com</a> | <a href=\"https://github.com/dpkn/howmanyweeksleft\" target=\"_blank\">See the code on GitHub</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/howmanyweeksleft/thumbnail.png",
+      "subtitle": "A website visualizing the time you have left before you die"
     },
-    "bodies-gallery": {
-        "background":"#CCE1AC",
-        "hidden": true,
-        "title": "The Bodies Gallery",
-        "subtitle": "2019",
-        "description": "The Bodies Gallery is a website that celebrates the variety of boob shapes and sizes in the world by letting people draw themselves. The proof of concept only contains a way to generate and upload boobs, but ideally, the gallery would contain all kinds of body parts that people feel proud or insecure about.<br><br>The website was made for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site, as well as the interaction design of the generator. The website is built using Vue, Firebase and Paper.js. ",
-        "cta": "<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</br>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/bodies-gallery/thumbnail.gif",
-            "subtitle": "A website celebrating the variety of boob shapes and sizes"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/bodies-gallery/screenshot.png"
-            }
-        },
-        "tags": ["web", "noteworthy"]
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/howmanyweeksleft/screenshot.png"
+      }
     },
-    "self-portrait-i": {
-        "hidden": false,
-        "title": "Daniël 2",
-        "subtitle": "2018",
-        "description": "Daniël 2 is a chatbot that uses a machine learning model to generate text messages as if it were me. Its neural network is trained on the 59353 WhatsApp messages I sent over the past five years. The data on which this model is trained encompasses everything I've shared with my closest friends, from my darkest secrets to my deepest crushes. The results are hilariously terrible.",
-        "cta": "<a href=\"https://github.com/dpkn/self-portrait\" target=\"_blank\">See the code on GitHub</a>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/self-portrait/desktop_photo.jpg",
-            "subtitle":"A chatbot trained on all the messages I have sent on WhatsApp"
-        },
-        "layout": "grid",
-        "content": {
-            "1": {
-                "url": "portfolio/self-portrait/desktop_photo_mid.jpg",
-                "class": "fifty"
-            },
-            "2": {
-                "type": "video",
-                "url": "portfolio/self-portrait/thumbnail.mp4",
-                "class": "fifty"
-            }
-        },
-        "tags": ["web", "noteworthy"]
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
+  "self-portrait-i": {
+    "hidden": false,
+    "title": "Daniël 2",
+    "subtitle": "2018",
+    "description": "Daniël 2 is a chatbot that uses a machine learning model to generate text messages as if it were me. Its neural network is trained on the 59353 WhatsApp messages I sent over the past five years. The data on which this model is trained encompasses everything I've shared with my closest friends, from my darkest secrets to my deepest crushes. The results are hilariously terrible.",
+    "cta": "<a href=\"https://github.com/dpkn/self-portrait\" target=\"_blank\">See the code on GitHub</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/self-portrait/desktop_photo.jpg",
+      "subtitle": "A chatbot trained on all the messages I have sent on WhatsApp"
     },
-    "hertzian-space": {
-        "hidden": false,
-        "background":"#000",
-        "color":"#fff",
-        "title": "HertzianSpace",
-        "subtitle": "2019 (Work in Progress)",
-        "description": "HertzianSpace is a real-time visualization of the packets that are sent between our mobile devices and WiFi access points to communicate. The first version of this installation premiered at <a href=\"https://www.filmfestival.nl/en\" target=\"_blank\">Netherlands Film Festival</a>'s BYOB event in the Nicola&iuml;church, Utrecht. The visuals are generated by a C++ program using OpenFrameworks, while the packet sniffing is done using an ESP8266 microcontroller.",
-        "cta":"<a href=\"https://github.com/dpkn/hertzian-space\" target=\"_blank\">See the code on GitHub</a>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/hertzian-space/thumbnail.jpg",
-            "subtitle": "A visualization of travelling WiFi packets"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "type": "vimeo",
-                "url": "https://player.vimeo.com/video/363095749?autoplay=1",
-                "class": "container"
-            }
-        },
-        "tags": ["noteworthy"]
+    "layout": "grid",
+    "content": {
+      "1": {
+        "url": "portfolio/self-portrait/desktop_photo_mid.jpg",
+        "class": "fifty"
+      },
+      "2": {
+        "type": "video",
+        "url": "portfolio/self-portrait/thumbnail.mp4",
+        "class": "fifty"
+      }
     },
-    "bloclock": {
-        "hidden": false,
-        "title": "Bloclock",
-        "subtitle": "A more sensible approach to time (2016)",
-        "description": "Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. Every 10 minutes, another block dissapears so that when you go to bed, all of your blocks will be gone. This way of framing time makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
-        "cta": "<a href=\"https://bloclock.com\" target=\"_blank\">Visit bloclock.com</a> | <a href=\"https://github.com/dpkn/bloclock\" target=\"_blank\">See the code on GitHub</a>",
-        "thumbnail": {
-            "subtitle": "A clock showing you the time you've left before you have to go to bed",
-            "type": "img",
-            "url": "portfolio/bloclock/thumbnail.jpg"
-        },
-        "layout": "grid",
-        "content": {
-            "1": {
-                "url": "portfolio/bloclock/bloclock.png",
-                "class": "hundred"
-            }
-        },
-        "tags": ["web"]
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
+  "hertzian-space": {
+    "hidden": false,
+    "background": "#000",
+    "color": "#fff",
+    "title": "HertzianSpace",
+    "subtitle": "2019",
+    "description": "HertzianSpace is a real-time visualization of the packets that are sent between our mobile devices and WiFi access points to communicate. The first version of this installation premiered at <a href=\"https://www.filmfestival.nl/en\" target=\"_blank\">Netherlands Film Festival</a>'s BYOB event in the Nicola&iuml;church, Utrecht. The visuals are generated by a C++ program using OpenFrameworks, while the packet sniffing is done using an ESP8266 microcontroller.",
+    "cta": "<a href=\"https://github.com/dpkn/hertzian-space\" target=\"_blank\">See the code on GitHub</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/hertzian-space/thumbnail.jpg",
+      "subtitle": "A visualization of travelling WiFi packets"
     },
-    "virtualeye": {
-        "hidden": false,
-        "background":"#191919",
-        "color":"#fff",
-        "title": "VirtualEye",
-        "subtitle": "Affordable intimacy for the massess (2018)",
-        "description": "In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
-        "cta": "<b>Model:</b> Amber Verrips",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/virtualeye/thumbnail.jpg",
-            "subtitle": "A dystopian concept about the commodification of love"
-        },
-        "layout": "grid",
-        "content": {
-            "1": {
-                "url": "portfolio/virtualeye/lonely.jpg"
-            },
-            "2": {
-                "url": "portfolio/virtualeye/stare.jpg"
-            }
-        },
-        "tags": ["visual", "noteworthy"]
+    "layout": "blog",
+    "content": {
+      "1": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/363095749?autoplay=1",
+        "class": "container"
+      }
     },
-    "lamp": {
-		"hidden": true,
-		"title": "LÄMP",
-		"subtitle": "2018",
-		"description":"Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room.",
-		"cta":"<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
-		"thumbnail":{
-			"type":"img",
-            "url":"portfolio/lamp/thumbnail.png",
-            "subtitle": "A light visualization for Google Assistant"
-		},
-		"layout":"blog",
-		"content":{
-            "0": {
-                "type": "vimeo",
-                "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
-                "class": "container"
-            },
-            "1110":{
-				"url":"portfolio/lamp/pink.jpg"
-            },
-            "1":{
-				"url":"portfolio/lamp/working.jpg"
-			},
-			"2":{
-				"url":"portfolio/lamp/milling.jpg"
-			},
-			"3":{
-				"url":"portfolio/lamp/wiring.png"
-            },
-            "4": {
-                "url": "portfolio/lamp/wireframe.png"
-            },
-            "5": {
-                "url": "portfolio/lamp/3dmodel.png"
-            }
-		},
-		"tags":["hardware"]
+    "tags": [
+      "noteworthy",
+      "hardware",
+      "visual"
+    ]
+  },
+  "virtualeye": {
+    "hidden": false,
+    "background": "#191919",
+    "color": "#fff",
+    "title": "VirtualEye",
+    "subtitle": "Affordable intimacy for the massess (2018)",
+    "description": "In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
+    "cta": "<b>Model:</b> Amber Verrips",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/virtualeye/thumbnail.jpg",
+      "subtitle": "A dystopian concept about the commodification of love"
     },
-    "piano-game": {
-        "hidden": false,
-        "title": "Pianio",
-        "description": "Pianio is an experimental game that is controlled by playing the right note on the right time using a MIDI USB-keyboard. The game uses the WebMIDI API to connect to the keyboard, and uses Tone.js to generate the music.",
-        "thumbnail": {
-            "subtitle": "A HTML5 game playable using a MIDI keyboard as the input",
-            "type": "img",
-            "url": "portfolio/experiments/piano-game/thumbnail.png"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/experiments/piano-game/visual.png"
-            },
-            "2": {
-                "url": "portfolio/experiments/piano-game/splashscreen.png"
-            },
-            "3": {
-                "url": "portfolio/experiments/piano-game/gameplay.png"
-            }
-        },
-        "tags": ["experiments"]
+    "layout": "grid",
+    "content": {
+      "1": {
+        "url": "portfolio/virtualeye/lonely.jpg"
+      },
+      "2": {
+        "url": "portfolio/virtualeye/stare.jpg"
+      }
     },
-    "studentloan-be-gone": {
-        "hidden": false,
-        "title": "Student Loan be Gone",
-        "subtitle": "2019",
-        "description": "A good friend told me he was afraid to visit DUO's website, the Dutch governmental body that, among other things, issues student loans. I made him this Chrome extension that replaces the information about your student loan debt with The Communist Manifesto, so you can easily manage your study affairs without being confronted by the crippling debt you have built up.<br/><br/><b>N.B.:</b> This extension does not necessarily reflect my views on what an ideal society would be like.",
-        "cta": "<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/experiments/debt-eraser/thumbnail.png",
-            "subtitle": "A Chrome extension that replaces your student loan debt with The Communist Manifesto"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/experiments/debt-eraser/screenshot.png"
-            }
-        },
-        "tags": ["experiments"]
+    "tags": [
+      "visual",
+      "noteworthy"
+    ]
+  },
+  "mathematical-love": {
+    "hidden": false,
+    "title": "Mathematical Love",
+    "subtitle": "2019",
+    "description": "These visuals are the result of training a popular machine learning model, StyleGAN, on the photos of all my Tinder matches, so that it can generate a near-endless sea of new faces. The training data and model are not published for privacy reasons.",
+    "thumbnail": {
+      "type": "video",
+      "url": "portfolio/love/thumbnail.mp4",
+      "poster": "portfolio/empress/thumbnail.png",
+      "subtitle": "A machine learning system trained on my Tinder matches"
     },
-    "kissing-cats": {
-        "hidden": false,
-        "title": "Kissing Cats",
-        "subtitle": "2019",
-        "description":"3D models of Cats in various situations, made in Blender. 3D printed on an Ultimaker 2, using Cura.",
-        "thumbnail": {
-            "type": "img",
-            "url": "portfolio/kissing-cats/thumbnail.jpg",
-            "subtitle": "3D models of Cats, made in Blender."
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "url": "portfolio/kissing-cats/kissing-cats.jpg"
-            },
-            "2": {
-                "url": "portfolio/kissing-cats/kissing-cats-print.jpg"
-            },
-            "3": {
-                "url": "portfolio/kissing-cats/winged.jpg"
-            },
-            "4": {
-                "url": "portfolio/kissing-cats/zeppelin.jpg"
-            },
-            "5": {
-                "url": "portfolio/kissing-cats/blueprint.jpg"
-            },
-            "6": {
-                "url": "portfolio/kissing-cats/kissing-cats-long.jpg"
-            }
-           
-        },
-        "tags": ["visual"]
+    "layout": "blog",
+    "content": {
+      "1": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/383490710?autoplay=1&muted=1&autopause=0",
+        "class": "container"
+      },
+      "2": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/383490483?autoplay=1&muted=1&autopause=0",
+        "class": "container"
+      }
     },
-    "happy": {
-        "hidden": false,
-        "title": "Happy Coffee",
-        "subtitle": "2017",
-        "description": "Brand identity and signage animations for a fictional coffee shop called Happy. Designed in Illustrator, animated in After Effects.",
-        "thumbnail": {
-            "type": "img",
-            "url":"portfolio/happy/thumbnail.jpg",
-            "subtitle": "Animations and branding for a fictional coffee shop"
-        },
-        "layout": "blog",
-        "content": {
-            "1": {
-                "type": "vimeo",
-                "url": "https://player.vimeo.com/video/243414541?autoplay=0",
-                "class": "container"
-            }
-        },
-        "tags": ["web", "noteworthy"]
+    "tags": [
+      "visual",
+      "noteworthy",
+      "video-cover"
+    ]
+  },
+  "replica-dimension": {
+    "hidden": false,
+    "background": "#000",
+    "color": "#fff",
+    "title": "Replica Dimension",
+    "subtitle": "2020",
+    "description": "Replica Dimension is the result of a two-week interdisciplinary experiment with folks from other HKU schools. We created a room that subtly reacts, both visually and auditorily, to your presence, mirroring you in abstracted ways.",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/replica-dimension/thumbnail.jpg",
+      "subtitle": "A room that reacts to your presence"
     },
-    "relatable-blobs": {
-        "hidden": false,
-        "title": "Relatable Blobs",
-        "description": "A poster series of wise and melancholic blobs.",
-        "thumbnail": {
-            "subtitle": "A poster series of wise and melancholic blobs",
-            "type": "img",
-            "url": "portfolio/wise-blobs/2.png"
-        },
-        "layout": "filmstrip",
-        "content": {
-            "1": {
-                "url": "portfolio/wise-blobs/1.png"
-            },
-            "2": {
-                "url": "portfolio/wise-blobs/2.png"
-            },
-            "3": {
-                "url": "portfolio/wise-blobs/3.png"
-            },
-            "4": {
-                "url": "portfolio/wise-blobs/4.png"
-            }
-        },
-        "tags": ["visual"]
+    "layout": "blog",
+    "content": {
+      "1": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/389015632?autoplay=1",
+        "class": "container"
+      }
     },
-    "lesya": {
-        "background":"#191919",
-        "color":"#fff",
-        "hidden": false,
-        "title": "Lesya",
-        "subtitle": "2018",
-        "thumbnail": {
-            "subtitle": "A photography series",
-            "type": "img",
-            "url": "portfolio/lesya/thumbnail.jpg"
-        },
-        "layout": "filmstrip",
-        "content": {
-            "1": {
-                "url": "portfolio/lesya/lesya_6.jpg"
-            },
-            "2": {
-                "url": "portfolio/lesya/lesya_2.jpg"
-            },
-            "3": {
-                "url": "portfolio/lesya/lesya_4.jpg"
-            },
-            "4": {
-                "url": "portfolio/lesya/lesya_1.jpg"
-            },
-            "5": {
-                "url": "portfolio/lesya/lesya_5.jpg"
-            },
-            "6": {
-                "url": "portfolio/lesya/lesya_3.jpg"
-            }
-        },
-        "tags": ["visual"]
-    }
+    "tags": [
+      "noteworthy",
+      "visual"
+    ]
+  },
+  "lamp": {
+    "hidden": true,
+    "title": "LÄMP",
+    "subtitle": "2018",
+    "description": "Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room. LÄMP is made using an ESP8266 microcontroller, programmed in C++. A simple web-app was made using Vuetify.",
+    "cta": "<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/lamp/thumbnail.png",
+      "subtitle": "A light visualization for Google Assistant"
+    },
+    "layout": "blog",
+    "content": {
+      "0": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
+        "class": "container"
+      },
+      "1": {
+        "url": "portfolio/lamp/working.jpg"
+      },
+      "2": {
+        "url": "portfolio/lamp/milling.jpg"
+      },
+      "3": {
+        "url": "portfolio/lamp/wiring.png"
+      },
+      "4": {
+        "url": "portfolio/lamp/wireframe.png"
+      },
+      "5": {
+        "url": "portfolio/lamp/3dmodel.png"
+      }
+    },
+    "tags": [
+      "hardware"
+    ]
+  },
+  "connectforcoffee": {
+    "hidden": false,
+    "background": "#F3DBC5",
+    "color": "#6F272A",
+    "title": "#ConnectForCoffee",
+    "subtitle": "2019",
+    "description": "#ConnectForCoffee is a Wi-Fi network designed for public waiting areas like airports and railway stations, aimed at making two stranger meet each other through safe and playful interaction. When someone connects to the network, instead of granting them access to the Internet, a captive portal opens where they are connected to another player. In this project I was responsible for the front-end development of the prototype in Vue, as well as some work on the Node.js back-end for the WebSocket communication. The network and server are running on a Raspberry PI.",
+    "cta": "<b>Playtests and Visuals:</b> Leon van Oldenburgh &amp; Kai Calis<br/><b>Experience Design:</b> <a href=\"http://luuksiewers.nl\" target=\"_blank\">Luuk Siewers</a> &amp; <a href=\"https://amarravi.com\" target=\"_blank\">Amar Ravi</a></br><b>Back-End Development and Hardware:</b>  <a href=\"https://github.com/Creator13\" target=\"_blank\">Casper van Battum</a> </br>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/connectforcoffee/thumbnail.png",
+      "subtitle": "A WiFi network that connects people to each other instead of to the Internet"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/connectforcoffee/poster.svg",
+        "style": "max-width: 800px;margin-bottom: 50px;"
+      },
+      "2": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/382012948?autoplay=1",
+        "class": "container"
+      }
+    },
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
+  "bodies-gallery": {
+    "background": "#CCE1AC",
+    "hidden": true,
+    "title": "The Bodies Gallery",
+    "subtitle": "2019",
+    "description": "The Bodies Gallery is a website that celebrates the variety of boob shapes and sizes in the world by letting people draw their boobs.<br>This project was done for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site, as well as the interaction design of the generator. The website is built using Vue, Firebase and Paper.js. ",
+    "cta": "<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</br>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/bodies-gallery/thumbnail.gif",
+      "subtitle": "A website celebrating the variety of boob shapes and sizes"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/bodies-gallery/screenshot.png"
+      }
+    },
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
+  "bloclock": {
+    "hidden": false,
+    "title": "Bloclock",
+    "subtitle": "A more sensible approach to time (2016)",
+    "description": "Bloclock gives you a visual overview of the time in your day that is left and has passed. The clock consists of a 10x10 grid in which each block resembles 10 minutes, adding up to a total of roughly 17 hours, thus showing only the time an average human is awake. Every 10 minutes, another block dissapears so that when you go to bed, all of your blocks will be gone. This way of framing time makes you more aware of how you spend your time, hopefully leading to less time wasted on things that don't matter.",
+    "cta": "<a href=\"https://bloclock.com\" target=\"_blank\">Visit bloclock.com</a> | <a href=\"https://github.com/dpkn/bloclock\" target=\"_blank\">See the code on GitHub</a>",
+    "thumbnail": {
+      "subtitle": "A clock showing you the time you've left before you have to go to bed",
+      "type": "img",
+      "url": "portfolio/bloclock/thumbnail.jpg"
+    },
+    "layout": "grid",
+    "content": {
+      "1": {
+        "url": "portfolio/bloclock/bloclock.png",
+        "class": "hundred"
+      }
+    },
+    "tags": [
+      "web"
+    ]
+  },
+  "piano-game": {
+    "hidden": false,
+    "title": "Pianio",
+    "description": "Pianio is an experimental game that is controlled by playing the right note at the right time using a MIDI USB-keyboard. The game uses the WebMIDI API to connect to the keyboard, and uses Tone.js to generate the music.",
+    "thumbnail": {
+      "subtitle": "A HTML5 game playable using a MIDI keyboard as the input",
+      "type": "img",
+      "url": "portfolio/experiments/piano-game/thumbnail.png"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/experiments/piano-game/visual.png"
+      },
+      "2": {
+        "url": "portfolio/experiments/piano-game/splashscreen.png"
+      },
+      "3": {
+        "url": "portfolio/experiments/piano-game/gameplay.png"
+      }
+    },
+    "tags": [
+      "experiments",
+      "web"
+    ]
+  },
+  "studentloan-be-gone": {
+    "hidden": false,
+    "title": "Student Loan be Gone",
+    "subtitle": "2019",
+    "description": "A good friend told me he was afraid to visit DUO's website, the Dutch governmental body that, among other things, issues student loans. I made him this Chrome extension that replaces the information about your student loan debt with The Communist Manifesto, so you can easily manage your study affairs without being confronted by the crippling debt you have built up.<br/><br/><b>N.B.:</b> This extension does not necessarily reflect my views on what an ideal society would be like.",
+    "cta": "<a href=\"https://github.com/dpkn/studentloan-be-gone\" target=\"_blank\">See the code and documentation on GitHub</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/experiments/debt-eraser/thumbnail.png",
+      "subtitle": "A Chrome extension that replaces your student loan debt with The Communist Manifesto"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/experiments/debt-eraser/screenshot.png"
+      }
+    },
+    "tags": [
+      "experiments"
+    ]
+  },
+  "kissing-cats": {
+    "hidden": false,
+    "title": "Kissing Cats",
+    "subtitle": "2019",
+    "description": "3D models of Cats in various situations, made in Blender. 3D printed on an Ultimaker 2, using Cura.",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/kissing-cats/thumbnail.jpg",
+      "subtitle": "3D models of Cats, made in Blender."
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/kissing-cats/kissing-cats.jpg"
+      },
+      "2": {
+        "url": "portfolio/kissing-cats/kissing-cats-print.jpg"
+      },
+      "3": {
+        "url": "portfolio/kissing-cats/winged.jpg"
+      },
+      "4": {
+        "url": "portfolio/kissing-cats/kissing-cats-long.jpg"
+      },
+      "5": {
+        "url": "portfolio/kissing-cats/zeppelin.jpg"
+      },
+      "6": {
+        "url": "portfolio/kissing-cats/blueprint.jpg"
+      }
+    },
+    "tags": [
+      "visual"
+    ]
+  },
+  "happy": {
+    "hidden": false,
+    "title": "Happy Coffee",
+    "subtitle": "2017",
+    "description": "Brand identity and signage animations for a fictional coffee shop called Happy. Designed in Illustrator, animated in After Effects.",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/happy/thumbnail.jpg",
+      "subtitle": "Animations and branding for a fictional coffee shop"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/243414541?autoplay=0",
+        "class": "container"
+      }
+    },
+    "tags": [
+      "visual",
+      "noteworthy"
+    ]
+  },
+  "relatable-blobs": {
+    "hidden": false,
+    "title": "Relatable Blobs",
+    "description": "A poster series of wise and melancholic blobs.",
+    "thumbnail": {
+      "subtitle": "A poster series of wise and melancholic blobs",
+      "type": "img",
+      "url": "portfolio/wise-blobs/2.png"
+    },
+    "layout": "filmstrip",
+    "content": {
+      "1": {
+        "url": "portfolio/wise-blobs/1.png"
+      },
+      "2": {
+        "url": "portfolio/wise-blobs/2.png"
+      },
+      "3": {
+        "url": "portfolio/wise-blobs/3.png"
+      },
+      "4": {
+        "url": "portfolio/wise-blobs/4.png"
+      }
+    },
+    "tags": [
+      "visual"
+    ]
+  },
+  "lesya": {
+    "background": "#191919",
+    "color": "#fff",
+    "hidden": false,
+    "title": "Lesya",
+    "subtitle": "2018",
+    "thumbnail": {
+      "subtitle": "A photography series",
+      "type": "img",
+      "url": "portfolio/lesya/thumbnail.jpg"
+    },
+    "layout": "filmstrip",
+    "content": {
+      "1": {
+        "url": "portfolio/lesya/lesya_6.jpg"
+      },
+      "2": {
+        "url": "portfolio/lesya/lesya_2.jpg"
+      },
+      "3": {
+        "url": "portfolio/lesya/lesya_4.jpg"
+      },
+      "4": {
+        "url": "portfolio/lesya/lesya_1.jpg"
+      },
+      "5": {
+        "url": "portfolio/lesya/lesya_5.jpg"
+      },
+      "6": {
+        "url": "portfolio/lesya/lesya_3.jpg"
+      }
+    },
+    "tags": [
+      "visual"
+    ]
+  }
 }
