@@ -102,6 +102,97 @@
       "visual"
     ]
   },
+  "lamp": {
+    "hidden": true,
+    "title": "LÄMP",
+    "subtitle": "2018",
+    "description": "Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room. LÄMP is made using an ESP8266 microcontroller, programmed in C++. A simple web-app was made using Vuetify.",
+    "cta": "<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/lamp/thumbnail.png",
+      "subtitle": "A light visualization for Google Assistant"
+    },
+    "layout": "blog",
+    "content": {
+      "0": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
+        "class": "container"
+      },
+      "1": {
+        "url": "portfolio/lamp/working.jpg"
+      },
+      "2": {
+        "url": "portfolio/lamp/milling.jpg"
+      },
+      "3": {
+        "url": "portfolio/lamp/wiring.png"
+      },
+      "4": {
+        "url": "portfolio/lamp/wireframe.png"
+      },
+      "5": {
+        "url": "portfolio/lamp/3dmodel.png"
+      }
+    },
+    "tags": [
+      "hardware"
+    ]
+  },
+  "connectforcoffee": {
+    "hidden": false,
+    "background": "#F3DBC5",
+    "color": "#6F272A",
+    "title": "#ConnectForCoffee",
+    "subtitle": "2019",
+    "description": "#ConnectForCoffee is a Wi-Fi network designed for public waiting areas like airports and railway stations, aimed at making two stranger meet each other through safe and playful interaction. When someone connects to the network, instead of granting them access to the Internet, a captive portal opens where they are connected to another player. In this project I was responsible for the front-end development of the prototype in Vue, as well as some work on the Node.js back-end for the WebSocket communication. The network and server are running on a Raspberry PI.",
+    "cta": "<b>Playtests and Visuals:</b> Leon van Oldenburgh &amp; Kai Calis<br/><b>Experience Design:</b> <a href=\"http://luuksiewers.nl\" target=\"_blank\">Luuk Siewers</a> &amp; <a href=\"https://amarravi.com\" target=\"_blank\">Amar Ravi</a></br><b>Back-End Development and Hardware:</b>  <a href=\"https://github.com/Creator13\" target=\"_blank\">Casper van Battum</a> </br>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/connectforcoffee/thumbnail.png",
+      "subtitle": "A WiFi network that connects people to each other instead of to the Internet"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/connectforcoffee/poster.svg",
+        "style": "max-width: 800px;margin-bottom: 50px;"
+      },
+      "2": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/382012948?autoplay=1",
+        "class": "container"
+      }
+    },
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
+  "bodies-gallery": {
+    "background": "#CCE1AC",
+    "hidden": true,
+    "title": "The Bodies Gallery",
+    "subtitle": "2019",
+    "description": "The Bodies Gallery is a website that celebrates the variety of boob shapes and sizes in the world by letting people draw their boobs.<br>This project was done for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site, as well as the interaction design of the generator. The website is built using Vue, Firebase and Paper.js. ",
+    "cta": "<a href=\"https://generative-boobs.web.app/#/\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</br>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/bodies-gallery/thumbnail.gif",
+      "subtitle": "A website celebrating the variety of boob shapes and sizes"
+    },
+    "layout": "blog",
+    "content": {
+      "1": {
+        "url": "portfolio/bodies-gallery/screenshot.png"
+      }
+    },
+    "tags": [
+      "web",
+      "noteworthy"
+    ]
+  },
   "virtualeye": {
     "hidden": false,
     "background": "#191919",
@@ -184,97 +275,6 @@
       "visual"
     ]
   },
-  "lamp": {
-    "hidden": true,
-    "title": "LÄMP",
-    "subtitle": "2018",
-    "description": "Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room. LÄMP is made using an ESP8266 microcontroller, programmed in C++. A simple web-app was made using Vuetify.",
-    "cta": "<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
-    "thumbnail": {
-      "type": "img",
-      "url": "portfolio/lamp/thumbnail.png",
-      "subtitle": "A light visualization for Google Assistant"
-    },
-    "layout": "blog",
-    "content": {
-      "0": {
-        "type": "vimeo",
-        "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
-        "class": "container"
-      },
-      "1": {
-        "url": "portfolio/lamp/working.jpg"
-      },
-      "2": {
-        "url": "portfolio/lamp/milling.jpg"
-      },
-      "3": {
-        "url": "portfolio/lamp/wiring.png"
-      },
-      "4": {
-        "url": "portfolio/lamp/wireframe.png"
-      },
-      "5": {
-        "url": "portfolio/lamp/3dmodel.png"
-      }
-    },
-    "tags": [
-      "hardware"
-    ]
-  },
-  "connectforcoffee": {
-    "hidden": false,
-    "background": "#F3DBC5",
-    "color": "#6F272A",
-    "title": "#ConnectForCoffee",
-    "subtitle": "2019",
-    "description": "#ConnectForCoffee is a Wi-Fi network designed for public waiting areas like airports and railway stations, aimed at making two stranger meet each other through safe and playful interaction. When someone connects to the network, instead of granting them access to the Internet, a captive portal opens where they are connected to another player. In this project I was responsible for the front-end development of the prototype in Vue, as well as some work on the Node.js back-end for the WebSocket communication. The network and server are running on a Raspberry PI.",
-    "cta": "<b>Playtests and Visuals:</b> Leon van Oldenburgh &amp; Kai Calis<br/><b>Experience Design:</b> <a href=\"http://luuksiewers.nl\" target=\"_blank\">Luuk Siewers</a> &amp; <a href=\"https://amarravi.com\" target=\"_blank\">Amar Ravi</a></br><b>Back-End Development and Hardware:</b>  <a href=\"https://github.com/Creator13\" target=\"_blank\">Casper van Battum</a> </br>",
-    "thumbnail": {
-      "type": "img",
-      "url": "portfolio/connectforcoffee/thumbnail.png",
-      "subtitle": "A WiFi network that connects people to each other instead of to the Internet"
-    },
-    "layout": "blog",
-    "content": {
-      "1": {
-        "url": "portfolio/connectforcoffee/poster.svg",
-        "style": "max-width: 800px;margin-bottom: 50px;"
-      },
-      "2": {
-        "type": "vimeo",
-        "url": "https://player.vimeo.com/video/382012948?autoplay=1",
-        "class": "container"
-      }
-    },
-    "tags": [
-      "web",
-      "noteworthy"
-    ]
-  },
-  "bodies-gallery": {
-    "background": "#CCE1AC",
-    "hidden": true,
-    "title": "The Bodies Gallery",
-    "subtitle": "2019",
-    "description": "The Bodies Gallery is a website that celebrates the variety of boob shapes and sizes in the world by letting people draw their boobs.<br>This project was done for <a href=\"https://rutgers.international\" target=\"_blank\">Rutgers</a>, who asked us to come up with a positive and interactive way to combat a toxic social norm of our choosing. In this project, which I did with four others, I was responsible for the development of the site, as well as the interaction design of the generator. The website is built using Vue, Firebase and Paper.js. ",
-    "cta": "<a href=\"https://bodiesgallery.com\" target=\"_blank\">Visit the Bodies Gallery</a><br><br><b>Research, Usability, Conceptual, Copy:</b> Vanessa van den Akker & Fee van Brummelen<br/><b>Marketing, Branding:</b> Tim van Galen &amp; Claudia Bosch</br>",
-    "thumbnail": {
-      "type": "img",
-      "url": "portfolio/bodies-gallery/thumbnail.gif",
-      "subtitle": "A website celebrating the variety of boob shapes and sizes"
-    },
-    "layout": "blog",
-    "content": {
-      "1": {
-        "url": "portfolio/bodies-gallery/screenshot.png"
-      }
-    },
-    "tags": [
-      "web",
-      "noteworthy"
-    ]
-  },
   "bloclock": {
     "hidden": false,
     "title": "Bloclock",
@@ -295,6 +295,57 @@
     },
     "tags": [
       "web"
+    ]
+  },
+  "lesya": {
+    "background": "#191919",
+    "color": "#fff",
+    "hidden": false,
+    "title": "Lesya",
+    "subtitle": "2018 & 2020",
+    "description": "These are 2D portraits I shot in 2018 with the use of a projector. In 2020 I fed these images into a 3D Inpainting machine learning model that attempts to 3D'ify them. Hover/touch to see the results.",
+  
+    "thumbnail": {
+      "subtitle": "A 3D photography series",
+      "type": "video",
+      "poster": "portfolio/lesya/thumbnail.jpeg",
+      "url": "portfolio/lesya/thumbnail.mp4"
+    },
+    "layout": "filmstrip",
+    "content": {
+      "1": {
+        "type":"hoverVideo",
+        "url": "portfolio/lesya/lesya_6.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_6.mp4"
+      },
+      "2": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_2.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_2.mp4"
+      },
+      "3": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_4.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_4.mp4"
+      },
+      "4": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_1.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_1.mp4"
+      },
+      "5": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_5.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_5.mp4"
+      },
+      "6": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_3.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_3.mp4"
+      }
+    },
+    "tags": [
+      "visual"
     ]
   },
   "piano-game": {
@@ -424,42 +475,6 @@
       },
       "4": {
         "url": "portfolio/wise-blobs/4.png"
-      }
-    },
-    "tags": [
-      "visual"
-    ]
-  },
-  "lesya": {
-    "background": "#191919",
-    "color": "#fff",
-    "hidden": false,
-    "title": "Lesya",
-    "subtitle": "2018",
-    "thumbnail": {
-      "subtitle": "A photography series",
-      "type": "img",
-      "url": "portfolio/lesya/thumbnail.jpg"
-    },
-    "layout": "filmstrip",
-    "content": {
-      "1": {
-        "url": "portfolio/lesya/lesya_6.jpg"
-      },
-      "2": {
-        "url": "portfolio/lesya/lesya_2.jpg"
-      },
-      "3": {
-        "url": "portfolio/lesya/lesya_4.jpg"
-      },
-      "4": {
-        "url": "portfolio/lesya/lesya_1.jpg"
-      },
-      "5": {
-        "url": "portfolio/lesya/lesya_5.jpg"
-      },
-      "6": {
-        "url": "portfolio/lesya/lesya_3.jpg"
       }
     },
     "tags": [

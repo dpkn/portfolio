@@ -66,13 +66,30 @@
               frameborder="0"
               allow="autoplay; fullscreen"
               allowfullscreen
-
             ></iframe>
           </div>
 
           <div v-else-if="contents.type=='text'">
             <h1>{{contents.title}}</h1>
             <div v-html="contents.description"></div>
+          </div>
+
+          <div class="hoverVideo" v-else-if="contents.type==='hoverVideo'"  role="button"
+               tabIndex="0">
+             <img
+              :src="baseUrl + contents.url"
+            />
+             <video
+              autoplay
+              loop
+              muted
+              playsinline
+            >
+              <source
+                :src="baseUrl + contents.hoverVideo"
+                type="video/mp4"
+              />
+            </video>
           </div>
 
           <img
@@ -280,5 +297,38 @@ video {
   max-width: 1200px;
   margin:auto;
   margin-bottom:30px;
+}
+
+.hoverVideo{
+  position: relative;
+  width: 400px;
+  height:550px;
+  overflow:hidden;
+  background:#000;
+
+  img{
+    z-index: 10;
+    opacity: 1;
+    transition:opacity 0.2s;
+  }
+
+   &:hover img, &:focus img, &:active img{
+      opacity: 0;
+    }
+
+  img,video{
+    top:0;
+    left:0;
+    position:absolute;
+  }
+  img{
+    width:100%;
+    height:auto;
+  }
+  video{
+    width:100%;
+    height:auto;
+  }
+
 }
 </style>
