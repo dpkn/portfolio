@@ -102,44 +102,6 @@
       "visual"
     ]
   },
-  "lamp": {
-    "hidden": true,
-    "title": "LÄMP",
-    "subtitle": "2018",
-    "description": "Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room. LÄMP is made using an ESP8266 microcontroller, programmed in C++. A simple web-app was made using Vuetify.",
-    "cta": "<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
-    "thumbnail": {
-      "type": "img",
-      "url": "portfolio/lamp/thumbnail.png",
-      "subtitle": "A light visualization for Google Assistant"
-    },
-    "layout": "blog",
-    "content": {
-      "0": {
-        "type": "vimeo",
-        "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
-        "class": "container"
-      },
-      "1": {
-        "url": "portfolio/lamp/working.jpg"
-      },
-      "2": {
-        "url": "portfolio/lamp/milling.jpg"
-      },
-      "3": {
-        "url": "portfolio/lamp/wiring.png"
-      },
-      "4": {
-        "url": "portfolio/lamp/wireframe.png"
-      },
-      "5": {
-        "url": "portfolio/lamp/3dmodel.png"
-      }
-    },
-    "tags": [
-      "hardware"
-    ]
-  },
   "connectforcoffee": {
     "hidden": false,
     "background": "#F3DBC5",
@@ -193,42 +155,14 @@
       "noteworthy"
     ]
   },
-  "virtualeye": {
-    "hidden": false,
-    "background": "#191919",
-    "color": "#fff",
-    "title": "VirtualEye",
-    "subtitle": "Affordable intimacy for the massess (2018)",
-    "description": "In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
-    "cta": "<b>Model:</b> Amber Verrips",
-    "thumbnail": {
-      "type": "img",
-      "url": "portfolio/virtualeye/thumbnail.jpg",
-      "subtitle": "A dystopian concept about the commodification of love"
-    },
-    "layout": "grid",
-    "content": {
-      "1": {
-        "url": "portfolio/virtualeye/lonely.jpg"
-      },
-      "2": {
-        "url": "portfolio/virtualeye/stare.jpg"
-      }
-    },
-    "tags": [
-      "visual",
-      "noteworthy"
-    ]
-  },
   "mathematical-love": {
     "hidden": false,
     "title": "Mathematical Love",
     "subtitle": "2019",
-    "description": "These visuals are the result of training a popular machine learning model, StyleGAN, on the photos of all my Tinder matches, so that it can generate a near-endless sea of new faces. The training data and model are not published for privacy reasons.",
+    "description": "These visuals are the result of training the popular machine learning model <b>StyleGAN</b> on the photos of all my Tinder matches, so that it can generate a near-endless sea of new faces. The first video is the archetype of the training data, like a personal Mona Lisa. The second video consists of two latent space walks through the model, exploring possible faces. The training data and model are not published for privacy reasons.",
     "thumbnail": {
       "type": "video",
       "url": "portfolio/love/thumbnail.mp4",
-      "poster": "portfolio/empress/thumbnail.png",
       "subtitle": "A machine learning system trained on my Tinder matches"
     },
     "layout": "blog",
@@ -250,13 +184,101 @@
       "video-cover"
     ]
   },
+  "lesya": {
+    "background": "#191919",
+    "color": "#fff",
+    "hidden": false,
+    "title": "Lesya",
+    "subtitle": "2018 & 2020",
+    "description": "These are 2D portraits I shot in 2018 with the use of a projector. In 2020 I fed these images into a 3D Inpainting machine learning model that attempts to 3D'ify them. Hover/touch to see the results.",
+    "thumbnail": {
+      "subtitle": "A 3D photography series",
+      "type": "video",
+      "poster": "portfolio/lesya/thumbnail.jpeg",
+      "url": "portfolio/lesya/thumbnail.mp4"
+    },
+    "layout": "filmstrip",
+    "content": {
+      "1": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_6.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_6.mp4"
+      },
+      "2": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_2.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_2.mp4"
+      },
+      "3": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_4.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_4.mp4"
+      },
+      "4": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_1.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_1.mp4"
+      },
+      "5": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_5.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_5.mp4"
+      },
+      "6": {
+        "type": "hoverVideo",
+        "url": "portfolio/lesya/lesya_3.jpg",
+        "hoverVideo": "portfolio/lesya/video/lesya_3.mp4"
+      }
+    },
+    "tags": [
+      "visual"
+    ]
+  },
+  "lamp": {
+    "hidden": true,
+    "title": "LÄMP",
+    "subtitle": "2018",
+    "description": "Smart lights have exisited for quite some time, but their form factor often limits their functionality to merely lighting up a room. By putting similair hardware in a tube, more visual information can be displayed while seamlessly blending into the rest of the room. LÄMP is made using an ESP8266 microcontroller, programmed in C++. A simple web-app was made using Vuetify.",
+    "cta": "<a href=\"https://github.com/dpkn/lamp\" target=\"_blank\">See the code and documentation on GitHub</a> | <a href=\"https://www.instructables.com/id/IoT-RGB-Design-Lamp-With-IFTTT/\" target=\"_blank\">Read the building instructions on Instructables.com</a>",
+    "thumbnail": {
+      "type": "img",
+      "url": "portfolio/lamp/thumbnail.png",
+      "subtitle": "A light visualization for Google Assistant"
+    },
+    "layout": "blog",
+    "content": {
+      "0": {
+        "type": "vimeo",
+        "url": "https://player.vimeo.com/video/382889252?autoplay=0&texttrack=en",
+        "class": "container"
+      },
+      "1": {
+        "url": "portfolio/lamp/working.jpg"
+      },
+      "2": {
+        "url": "portfolio/lamp/milling.jpg"
+      },
+      "3": {
+        "url": "portfolio/lamp/wiring.png"
+      },
+      "4": {
+        "url": "portfolio/lamp/wireframe.png"
+      },
+      "5": {
+        "url": "portfolio/lamp/3dmodel.png"
+      }
+    },
+    "tags": [
+      "hardware"
+    ]
+  },
   "replica-dimension": {
     "hidden": false,
     "background": "#000",
     "color": "#fff",
     "title": "Replica Dimension",
     "subtitle": "2020",
-    "description": "Replica Dimension is the result of a two-week interdisciplinary experiment with folks from other HKU schools. We created a room that subtly reacts, both visually and auditorily, to your presence, mirroring you in abstracted ways.",
+    "description": "Replica Dimension is the result of a two-week interdisciplinary experiment with folks from other HKU schools. We created a room that subtly reacts, both visually and auditorily, to your presence, mirroring you in abstracted ways. The visuals are made with Isadora and Processing, using two Kinects and a camera as inputs. The soundscape is generated from the amplified sound of the moving tinfoil walls using Logic Pro.",
     "thumbnail": {
       "type": "img",
       "url": "portfolio/replica-dimension/thumbnail.jpg",
@@ -297,57 +319,34 @@
       "web"
     ]
   },
-  "lesya": {
+  "virtualeye": {
+    "hidden": false,
     "background": "#191919",
     "color": "#fff",
-    "hidden": false,
-    "title": "Lesya",
-    "subtitle": "2018 & 2020",
-    "description": "These are 2D portraits I shot in 2018 with the use of a projector. In 2020 I fed these images into a 3D Inpainting machine learning model that attempts to 3D'ify them. Hover/touch to see the results.",
-  
+    "title": "VirtualEye",
+    "subtitle": "Affordable intimacy for the massess (2018)",
+    "description": "In an age of algorithmic matchmaking, virtual reality porn and ʻrent-a-girlfriendʼ-services, love seems to become more and more commodified. VirtualEye is a dystopian concept in which even something as intimate as eye contact has become a product for consumption. The mixed reality application projects a virtual person onto your surroundings, enabling you to stare into their eyes at any moment, feeling their presence as if it were a real person.",
+    "cta": "<b>Model:</b> Amber Verrips",
     "thumbnail": {
-      "subtitle": "A 3D photography series",
-      "type": "video",
-      "poster": "portfolio/lesya/thumbnail.jpeg",
-      "url": "portfolio/lesya/thumbnail.mp4"
+      "type": "img",
+      "url": "portfolio/virtualeye/thumbnail.jpg",
+      "subtitle": "A dystopian concept about the commodification of love"
     },
-    "layout": "filmstrip",
+    "layout": "grid",
     "content": {
       "1": {
-        "type":"hoverVideo",
-        "url": "portfolio/lesya/lesya_6.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_6.mp4"
+        "url": "portfolio/virtualeye/lonely.jpg"
       },
       "2": {
-        "type": "hoverVideo",
-        "url": "portfolio/lesya/lesya_2.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_2.mp4"
-      },
-      "3": {
-        "type": "hoverVideo",
-        "url": "portfolio/lesya/lesya_4.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_4.mp4"
-      },
-      "4": {
-        "type": "hoverVideo",
-        "url": "portfolio/lesya/lesya_1.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_1.mp4"
-      },
-      "5": {
-        "type": "hoverVideo",
-        "url": "portfolio/lesya/lesya_5.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_5.mp4"
-      },
-      "6": {
-        "type": "hoverVideo",
-        "url": "portfolio/lesya/lesya_3.jpg",
-        "hoverVideo": "portfolio/lesya/video/lesya_3.mp4"
+        "url": "portfolio/virtualeye/stare.jpg"
       }
     },
     "tags": [
-      "visual"
+      "visual",
+      "noteworthy"
     ]
   },
+
   "piano-game": {
     "hidden": false,
     "title": "Pianio",

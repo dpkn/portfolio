@@ -18,7 +18,8 @@
       </router-link>
     </section>
     <transition-group name="fade" mode="out-in">
-      <section id="portfolio-grid" class="portfolio-grid container" v-show="imagesLoaded" key="portfolio-grid">
+      <section id="portfolio-grid" class="portfolio-grid container"
+      v-show="imagesLoaded" key="portfolio-grid">
         <div
           v-for="(item,key) in portfolioItems"
           v-bind:key="key"
@@ -130,9 +131,9 @@ export default {
       });
 
       // Really ugly fix for the video elements not having a height at first
-      setTimeout(()=>{
+      setTimeout(() => {
         this.grid.layout();
-      },300)
+      }, 300);
 
       // If no filter is specified, show noteworthy projects. Otherwise apply requested filter
       if (this.$route.params.filter === '' || !this.$route.params.filter) {
@@ -165,6 +166,8 @@ export default {
   text-align: center;
   @include clearfix;
   min-height: 600px;
+  z-index: 5;
+  position: relative;
 }
 .portfolio-grid {
   text-align: center;
@@ -242,7 +245,7 @@ video{
 }
 .portfolio-item:hover{
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  
+
 }
 .portfolio-item:hover .overlay {
   opacity: 1;

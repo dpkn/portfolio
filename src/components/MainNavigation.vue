@@ -1,6 +1,6 @@
 <template>
   <header class="container">
-      <h1 class="pull-left">Dani&euml;l Korssen</h1>
+      <h1>Dani&euml;l Korssen</h1>
   </header>
 </template>
 
@@ -14,8 +14,10 @@ export default {
 <style scoped lang="scss">
 header{
   padding: 30px 0;
+  position: relative;
+  z-index: 10;
   box-sizing: border-box;
-  @include clearfix;
+  pointer-events:none;
 }
 h1, a{
   margin: 0;

@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <MainHero></MainHero>
-    <PortfolioGrid></PortfolioGrid>
+    <MainHero/>
+    <Cubes/>
+    <PortfolioGrid/>
   </div>
 </template>
 
 <script>
 import MainHero from '@/components/MainHero.vue';
+import Cubes from '@/components/Cubes.vue';
 import PortfolioGrid from '@/components/PortfolioGrid.vue';
 
 export default {
@@ -14,6 +16,7 @@ export default {
   components: {
     MainHero,
     PortfolioGrid,
+    Cubes,
   },
 };
 </script>
