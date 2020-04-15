@@ -5,12 +5,16 @@
         all
       </router-link>
       <span>|</span>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
-        web
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'physical'} }">
+       physical
       </router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'visual'} }">
         visual
       </router-link>
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'online' }  }">
+        virtual
+      </router-link>
+       <span>|</span>
       <router-link
         tag="button"
         :to="{ name: 'portfolio', params: { filter:'experiments'} }">
@@ -252,5 +256,8 @@ video{
 }
 .portfolio-item:hover .overlay .text {
   bottom: 0;
+}
+.button-group{
+   padding: 30px;
 }
 </style>

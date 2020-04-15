@@ -89,8 +89,8 @@ export default {
 
       window.onresize = this.onResize;
       //   window.ontouchmove = this.onMouseClick;
-      window.addEventListener('mousedown', this.onMouseClick, true);
-      window.addEventListener('touchmove', this.onMouseClick, true);
+      this.$refs.canvas.addEventListener('mousedown', this.onMouseClick, true);
+      this.$refs.canvas.addEventListener('touchmove', this.onMouseClick, true);
       this.drawFrame();
     },
     drawFrame() {
