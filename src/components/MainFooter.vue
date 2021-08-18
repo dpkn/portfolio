@@ -1,7 +1,8 @@
 <template>
   <footer>
     <p>
-      &copy; Dani&euml;l Korssen<br/>
+      You made it till the end!! Here's a flower:<br/>
+      🌸
     </p>
   </footer>
 </template>

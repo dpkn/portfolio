@@ -2,7 +2,7 @@
   <section class="hero container" ref="root">
     <div class="introduction">
       <h1>
-        Hi! I'm a freelance <span>creative developer</span>
+        Hi! I'm a freelance <span>creative technologist</span>
         building peculiar interactive digital artefacts, focussing on experimental web technologies.
       </h1>
       <p>
@@ -12,10 +12,6 @@
           target="_blank"
         >GitHub</a>,
         <a
-          href="https://twitter.com/danielkorssen"
-          target="_blank"
-        >Twitter</a>,
-        <a
           href="https://instagram.com/danielkorssen"
           target="_blank"
         >Instagram</a>,
@@ -23,6 +19,14 @@
           href="http://linkedin.com/in/danielkorssen/"
           target="_blank"
         >LinkedIn</a>,
+        <a
+          href="https://twitter.com/danielkorssen"
+          target="_blank"
+        >Twitter</a>,
+        <a
+          href="https://open.spotify.com/user/daankorssen"
+          target="_blank"
+        >Spotify</a>,
         or send me an
         <a
           href="#"
@@ -30,14 +34,19 @@
         >
           email</a>.
       </p>
-      <!-- <div class="aboutSection" :class="{open: aboutOpen }">
-        <a @click="aboutOpen = !aboutOpen"><span>&rarr;</span>Exhibitions & Talks</a>
+      <div class="aboutSection" :class="{open: aboutOpen }">
+        <a @click="aboutOpen = !aboutOpen"><span>&rarr;</span>Recent Exhibitions & Talks</a>
         <div>
-          <p><b>'Creating a Not-So-Smart AI Chatbot with p5.js'</b>, Talk @ PCD, Amsterdam, 2019</p>
-          <p><b>HertzianSpace</b>, Exhibition @ BYOB, Utrecht, 2019</p>
+          <p><b>Awwwards.com Honourable Mention / Mobile Excellence</b>, portfolionight.xyz, 2021 (Website)</p>
+          <p><b>HertzianSpace</b>, Dutch Design Week, 2020 (Exhibition)</p>
+          <p><b>Mathematical Love</b>, BYOB Utrecht, 2020 (Exhibition)</p>
+          <p><b>'Demystifying Technology'</b>, Ars Electronica, 2020 (Discussion)</p>
+          <p><b>HertzianSpace</b>, Ars Electronica, 2020 (Exhibition)</p>
+          <p><b>'Organizing a Digital Dance Party'</b>, IxDA Redux Conference, 2020 (Session)</p>
+          <p><b>HertzianSpace</b>, BYOB Utrecht, 2019 (Exhibition)</p>
+          <p><b>'Creating a Not-So-Smart AI Chatbot with p5.js'</b>, PCD Amsterdam, 2019 (Talk)</p>
         </div>
-      </div> -->
-
+      </div>
     </div>
   </section>
 </template>
@@ -122,18 +131,25 @@ h1 {
     display: none;
   }
 }
-
 .aboutSection div{
-  height: 0;
+  max-height: 0;
   overflow:hidden;
-  transition:0.3s height;
+  transition:0.3s max-height;
+  margin-left: 15px;
+  margin-top:10px;
+  font-size:.9em;
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .aboutSection.open div{
-  height: 200px;
+  max-height:400px;
 }
 .aboutSection a{
   font-weight: bold;
   text-decoration: underline;
+    pointer-events: all;
 }
 .aboutSection a span{
   transition:0.5s transform;

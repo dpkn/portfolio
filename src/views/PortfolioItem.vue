@@ -189,7 +189,6 @@ export default {
   left: 0;
   z-index: 9999;
   overflow-y: scroll;
-  overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
 }
 .info {
@@ -237,7 +236,6 @@ p a {
 .grid {
   .item {
     background: #f2f2f2;
-    display: inline-block;
     width: 50%;
     float: left;
     &.hundred {
@@ -275,11 +273,13 @@ video {
 .filmstrip {
   border: 0;
   width: 100%;
+  padding-bottom: 50px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
+
   .item {
     display: inline-block;
     overflow: hidden;
@@ -290,7 +290,6 @@ video {
     width: 400px;
     background: #f2f2f2;
   }
-  padding-bottom: 50px;
 }
 
 .blog div, .blog img {
@@ -329,6 +328,5 @@ video {
     width:100%;
     height:auto;
   }
-
 }
 </style>

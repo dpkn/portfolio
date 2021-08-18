@@ -6,7 +6,6 @@
         <router-view></router-view>
       </keep-alive>
     </transition>
-    <MainFooter></MainFooter>
 
     <transition name="fade" mode="out-in">
       <router-view name="modal"></router-view>
@@ -16,13 +15,11 @@
 
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
-import MainFooter from '@/components/MainFooter.vue';
 
 export default {
   name: 'app',
   components: {
     MainNavigation,
-    MainFooter,
   },
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used

@@ -8,11 +8,11 @@
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'physical'} }">
        physical
       </router-link>
+      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'web' }  }">
+        web
+      </router-link>
       <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'visual'} }">
         visual
-      </router-link>
-      <router-link tag="button" :to="{ name: 'portfolio', params: { filter:'online' }  }">
-        virtual
       </router-link>
        <span>|</span>
       <router-link
@@ -30,7 +30,16 @@
           class="portfolio-item"
           :class="item.tags"
         >
-          <router-link :to="{ name: 'PortfolioItem', params: {'id':key} }">
+          <!-- todo: use template or another component to avoid double code in tweet & router-link -->
+
+          <a v-if="item.type == 'tweet'" :href="item.externalURL" target="_blank">
+            <img
+              :src="baseUrl + item.thumbnail.url"
+              :alt="key"
+            />
+          </a>
+
+          <router-link v-else :to="{ name: 'PortfolioItem', params: {'id':key} }">
             <img
               v-if="item.thumbnail.type=='img'"
               :src="baseUrl + item.thumbnail.url"
@@ -60,6 +69,7 @@
               </div>
             </div>
           </router-link>
+
         </div>
       </section>
       <LoadingSpinner v-show="!imagesLoaded" key="loading-portfolio"></LoadingSpinner>
@@ -101,6 +111,10 @@ export default {
           transitionDuration = 0;
         }
         this.grid.arrange({ filter: this.filter, transitionDuration });
+
+        setTimeout(() => {
+          this.grid.layout();
+        }, 400);
       }
     },
   },
@@ -137,7 +151,11 @@ export default {
       // Really ugly fix for the video elements not having a height at first
       setTimeout(() => {
         this.grid.layout();
-      }, 300);
+      }, 100);
+      setTimeout(() => {
+        this.grid.layout();
+      }, 800);
+
 
       // If no filter is specified, show noteworthy projects. Otherwise apply requested filter
       if (this.$route.params.filter === '' || !this.$route.params.filter) {

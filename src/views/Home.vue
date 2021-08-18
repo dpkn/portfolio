@@ -3,6 +3,7 @@
     <MainHero/>
     <Cubes/>
     <PortfolioGrid/>
+    <MainFooter/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import MainHero from '@/components/MainHero.vue';
 import Cubes from '@/components/Cubes.vue';
 import PortfolioGrid from '@/components/PortfolioGrid.vue';
+import MainFooter from '@/components/MainFooter.vue';
 
 export default {
   name: 'home',
@@ -17,6 +19,7 @@ export default {
     MainHero,
     PortfolioGrid,
     Cubes,
+    MainFooter,
   },
 };
 </script>

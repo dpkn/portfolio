@@ -3,8 +3,8 @@ import Router from 'vue-router';
 import Meta from 'vue-meta';
 
 // Import views
-import Home from './views/Home.vue';
-import PortfolioItem from './views/PortfolioItem.vue';
+// import Home from './views/Home.vue';
+// import PortfolioItem from './views/PortfolioItem.vue';
 
 Vue.use(Router);
 
@@ -26,14 +26,14 @@ export default new Router({
     {
       path: '/portfolio/:filter?',
       name: 'portfolio',
-      component: Home,
+      component: () => import('@/views/Home.vue'),
     },
     {
       path: '/project/:id',
       name: 'PortfolioItem',
       components: {
         default: '',
-        modal: PortfolioItem,
+        modal: () => import('@/views/PortfolioItem.vue'),
       },
     },
     {
